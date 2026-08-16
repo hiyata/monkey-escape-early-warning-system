@@ -17,43 +17,25 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
-      <div>
-        <h1>M.E.E.W.S.</h1>
-        <p class="brand-sub">Monkey Escape Early Warning System</p>
-      </div>
+      <h1>M.E.E.W.S.</h1>
     </div>
     <div class="threat-meter" id="threatMeter">
       <span class="threat-label">NATIONAL THREAT CONDITION</span>
       <span class="threat-value" id="threatValue">ASSESSING…</span>
     </div>
+    <button id="reportBtn" class="btn-alert">REPORT A SIGHTING</button>
   </div>
 </header>
-
-<nav class="subbar">
-  <div class="subbar-inner">
-    <span id="statLine">Loading incident database…</span>
-    <div class="subbar-actions">
-      <button id="reportBtn" class="btn-alert">REPORT A SIGHTING</button>
-    </div>
-  </div>
-</nav>
-
-<section class="spotlight" id="spotlight" style="display:none;">
-  <div class="spotlight-inner">
-    <div class="spotlight-label">SPOTLIGHT STORY</div>
-    <h2 id="spotlightTitle"></h2>
-    <div class="spotlight-meta" id="spotlightMeta"></div>
-    <p id="spotlightSummary"></p>
-    <div class="spotlight-actions">
-      <button id="spotlightLocate" class="btn-secondary">Show on map</button>
-      <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source</a>
-    </div>
-  </div>
-</section>
 
 <main class="layout">
 
   <section class="map-panel">
+    <div class="spotlight-bar" id="spotlight" hidden>
+      <span class="spotlight-tag">SPOTLIGHT</span>
+      <span class="spotlight-title" id="spotlightTitle"></span>
+      <span class="spotlight-meta" id="spotlightMeta"></span>
+      <button id="spotlightLocate" class="spotlight-link">View on map</button>
+    </div>
     <div class="scope-toggle" role="tablist">
       <button class="scope-btn active" id="scopeUsBtn" data-scope="us" role="tab" aria-selected="true">US ONLY</button>
       <button class="scope-btn" id="scopeAllBtn" data-scope="all" role="tab" aria-selected="false">INCLUDE INTERNATIONAL</button>
@@ -70,6 +52,7 @@
   </section>
 
   <aside class="sidebar">
+    <p id="statLine" class="stat-line">Loading incident database…</p>
     <div class="panel-title"><h2>FILTER LOG</h2></div>
     <div class="filters">
       <label>Year

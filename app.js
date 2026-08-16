@@ -184,31 +184,18 @@ function pickSpotlight(incidents){
 
 function renderSpotlight(incidents){
   const inc = pickSpotlight(incidents);
-  const section = document.getElementById("spotlight");
+  const bar = document.getElementById("spotlight");
   if(!inc){
-    section.style.display = "none";
+    bar.hidden = true;
     return;
   }
-  section.style.display = "";
+  bar.hidden = false;
+  bar.title = inc.summary; // full summary available on hover; detail also on the map popup
   document.getElementById("spotlightTitle").textContent = inc.title;
-  document.getElementById("spotlightMeta").innerHTML = `
-    <span class="badge ${inc.tier}">${(inc.tier||"").toUpperCase()}</span>
-    <span class="badge category-${inc.category||"escape"}">${CATEGORY_LABELS[inc.category] || "Escape"}</span>
-    <span class="badge ${inc.status}">${(inc.status||"").replace("_"," ").toUpperCase()}</span>
-    <span>${escapeHtml(locationLabel(inc))} · ${formatDateRange(inc)}</span>
-  `;
-  document.getElementById("spotlightSummary").textContent = inc.summary;
+  document.getElementById("spotlightMeta").textContent = `${locationLabel(inc)} · ${inc.dateStart}`;
 
   const locateBtn = document.getElementById("spotlightLocate");
   locateBtn.onclick = () => map.setView([inc.lat, inc.lng], 8);
-
-  const sourceLink = document.getElementById("spotlightSource");
-  if(inc.sourceUrl){
-    sourceLink.href = inc.sourceUrl;
-    sourceLink.style.display = "";
-  } else {
-    sourceLink.style.display = "none";
-  }
 }
 
 function populateFilters(incidents){
