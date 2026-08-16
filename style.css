@@ -252,18 +252,11 @@ body{min-height:100vh;display:flex;flex-direction:column;}
   border-color:var(--red);
   color:#fff;
 }
-.scope-btn[data-scope="history"].active{
+.scope-btn[data-scope="all"].active{
   background:#20262f;
   border-color:var(--blue);
 }
 
-.empty-scope-note{
-  text-align:center;
-  color:var(--text-dim);
-  font-size:13px;
-  padding:14px;
-  margin:0;
-}
 #map{
   height:560px;
   border-radius:4px;
@@ -287,13 +280,6 @@ body{min-height:100vh;display:flex;flex-direction:column;}
   flex-direction:column;
   min-height:0;
 }
-.filter-scope-note{
-  font-size:11px;
-  color:var(--text-dim);
-  margin:-4px 0 10px;
-  font-style:italic;
-}
-
 .filters{
   display:flex;
   flex-direction:column;
@@ -352,6 +338,7 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 .badge.confirmed{background:#2a3040;color:#9fb3d9;}
 .badge.reported{background:#3a2f16;color:var(--amber);}
 .badge.major{background:var(--red-dim);color:#ffb3b0;}
+.badge.intl{background:#20262f;color:var(--blue);}
 .badge.at_large{background:var(--red);color:#fff;}
 .badge.resolved{background:#20262f;color:var(--text-dim);}
 .badge.contained{background:#20262f;color:var(--blue);}

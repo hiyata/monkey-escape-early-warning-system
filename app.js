@@ -76,7 +76,7 @@ function renderMap(incidents){
 
     const popupHtml = `
       <h3>${escapeHtml(inc.title)}</h3>
-      <p>${inc.city}, ${inc.state} — ${formatDateRange(inc)}</p>
+      <p>${escapeHtml(locationLabel(inc))} — ${formatDateRange(inc)}</p>
       <p>${escapeHtml(inc.summary)}</p>
       <p><strong>${(inc.tier||"").toUpperCase()}</strong> · ${CATEGORY_LABELS[inc.category] || "Escape"} · ${(inc.status||"").replace("_"," ").toUpperCase()} · ${inc.count || 1} monkey(s)</p>
       ${inc.sourceUrl ? `<p><a href="${inc.sourceUrl}" target="_blank" rel="noopener">Source: ${escapeHtml(inc.sourceName || "link")}</a></p>` : ""}
@@ -91,6 +91,14 @@ function formatDateRange(inc){
   const end = inc.dateEnd;
   if(!end || end === start) return start;
   return `${start} → ${end}`;
+}
+
+function isUS(inc){
+  return !inc.country || inc.country === "US";
+}
+
+function locationLabel(inc){
+  return isUS(inc) ? `${inc.city}, ${inc.state}` : `${inc.city}, ${inc.state ? inc.state + ", " : ""}${inc.country}`;
 }
 
 function escapeHtml(str){
@@ -149,10 +157,10 @@ function renderTicker(incidents){
   const items = [...incidents]
     .sort((a,b) => new Date(b.dateStart) - new Date(a.dateStart))
     .slice(0, 12)
-    .map(i => `${(CATEGORY_LABELS[i.category] || i.tier || "").toUpperCase()}: ${i.title} — ${i.city}, ${i.state} (${i.dateStart})`);
-  const text = items.length ? items.join("     ///     ") : "NO INCIDENTS IN DATABASE";
+    .map(i => `${(CATEGORY_LABELS[i.category] || i.tier || "").toUpperCase()}: ${i.title} — ${locationLabel(i)} (${i.dateStart})`);
+  const text = items.length ? items.join("     //     ") : "NO INCIDENTS IN DATABASE";
   const track = document.getElementById("tickertapeTrack");
-  track.textContent = "🐒 " + text + "     ///     🐒 " + text;
+  track.textContent = text + "     //     " + text;
 
   // Recompute animation duration from actual rendered width so the scroll speed
   // (px/sec) stays constant as the feed grows, instead of a fixed duration
@@ -187,7 +195,7 @@ function renderSpotlight(incidents){
     <span class="badge ${inc.tier}">${(inc.tier||"").toUpperCase()}</span>
     <span class="badge category-${inc.category||"escape"}">${CATEGORY_LABELS[inc.category] || "Escape"}</span>
     <span class="badge ${inc.status}">${(inc.status||"").replace("_"," ").toUpperCase()}</span>
-    <span>${inc.city}, ${inc.state} · ${formatDateRange(inc)}</span>
+    <span>${escapeHtml(locationLabel(inc))} · ${formatDateRange(inc)}</span>
   `;
   document.getElementById("spotlightSummary").textContent = inc.summary;
 
@@ -240,7 +248,7 @@ function activeCategoryFilters(){
   return [...document.querySelectorAll(".category-filter:checked")].map(el => el.value);
 }
 
-let viewScope = "active"; // "active" = currently at_large/monitoring only; "history" = full archive + date filters
+let regionScope = "us"; // "us" = US (incl. territories) only, prioritized default; "all" = include international
 
 function applyFilters(){
   const showConfirmed = document.getElementById("showConfirmed").checked;
@@ -250,12 +258,10 @@ function applyFilters(){
   const month = document.getElementById("monthFilter").value;
 
   const filtered = allIncidents.filter(i => {
-    if(viewScope === "active" && !(i.status === "at_large" || i.status === "monitoring")) return false;
-    if(viewScope === "history"){
-      const [iy, im] = i.dateStart.split("-");
-      if(year !== "all" && iy !== year) return false;
-      if(month !== "all" && im !== month) return false;
-    }
+    if(regionScope === "us" && !isUS(i)) return false;
+    const [iy, im] = i.dateStart.split("-");
+    if(year !== "all" && iy !== year) return false;
+    if(month !== "all" && im !== month) return false;
     if(i.tier === "confirmed" && !showConfirmed) return false;
     if(i.tier === "reported" && !showReported) return false;
     if(!activeCategories.includes(i.category || "escape")) return false;
@@ -265,25 +271,14 @@ function applyFilters(){
   renderMap(filtered);
   renderIncidentList(filtered);
   renderStatLine(filtered);
-
-  const emptyNote = document.getElementById("emptyScopeNote");
-  const mapEl = document.getElementById("map");
-  const isEmptyActive = viewScope === "active" && filtered.length === 0;
-  emptyNote.hidden = !isEmptyActive;
-  mapEl.style.display = isEmptyActive ? "none" : "";
 }
 
-function setScope(scope){
-  viewScope = scope;
-  document.getElementById("scopeActiveBtn").classList.toggle("active", scope === "active");
-  document.getElementById("scopeActiveBtn").setAttribute("aria-selected", scope === "active");
-  document.getElementById("scopeHistoryBtn").classList.toggle("active", scope === "history");
-  document.getElementById("scopeHistoryBtn").setAttribute("aria-selected", scope === "history");
-
-  document.getElementById("mapTitle").textContent = scope === "active" ? "LIVE THREAT MAP" : "FULL INCIDENT ARCHIVE";
-  document.getElementById("incidentListTitle").textContent = scope === "active" ? "ACTIVE / ONGOING" : "INCIDENT LOG";
-  document.getElementById("yearFilter").disabled = scope === "active";
-  document.getElementById("monthFilter").disabled = scope === "active";
+function setRegionScope(scope){
+  regionScope = scope;
+  document.getElementById("scopeUsBtn").classList.toggle("active", scope === "us");
+  document.getElementById("scopeUsBtn").setAttribute("aria-selected", scope === "us");
+  document.getElementById("scopeAllBtn").classList.toggle("active", scope === "all");
+  document.getElementById("scopeAllBtn").setAttribute("aria-selected", scope === "all");
 
   applyFilters();
 }
@@ -306,8 +301,9 @@ function renderIncidentList(incidents){
       <span class="badge category-${inc.category||"escape"}">${CATEGORY_LABELS[inc.category] || "Escape"}</span>
       <span class="badge ${inc.status}">${(inc.status||"").replace("_"," ").toUpperCase()}</span>
       ${inc.severity === "major" ? '<span class="badge major">MAJOR</span>' : ""}
+      ${!isUS(inc) ? '<span class="badge intl">INTL</span>' : ""}
       <h3>${escapeHtml(inc.title)}</h3>
-      <div class="meta">${inc.city}, ${inc.state} · ${formatDateRange(inc)} · ${inc.count||1} monkey(s)</div>
+      <div class="meta">${escapeHtml(locationLabel(inc))} · ${formatDateRange(inc)} · ${inc.count||1} monkey(s)</div>
       <div class="meta">${escapeHtml(inc.summary)}</div>
     `;
     card.addEventListener("click", () => {
@@ -349,7 +345,7 @@ function wireReportForm(){
       title: `Community Report: ${city}, ${state}`,
       dateStart: date,
       dateEnd: date,
-      city, state,
+      city, state, country: "US",
       lat: coords.lat + (Math.random()-0.5)*0.4,
       lng: coords.lng + (Math.random()-0.5)*0.4,
       tier: "reported",
@@ -366,10 +362,10 @@ function wireReportForm(){
     saveCommunityReport(report);
     allIncidents.push(report);
     populateYearOptionIfNeeded(date.slice(0,4));
-    renderThreatMeter(allIncidents);
+    renderThreatMeter(allIncidents.filter(isUS));
     renderTicker(allIncidents);
     renderSpotlight(allIncidents);
-    setScope("active"); // surface the new report immediately, regardless of current scope
+    applyFilters();
     form.reset();
     close();
   });
@@ -415,12 +411,12 @@ function approxCoordsForState(abbr){
   document.getElementById("showConfirmed").addEventListener("change", applyFilters);
   document.getElementById("showReported").addEventListener("change", applyFilters);
   document.querySelectorAll(".category-filter").forEach(el => el.addEventListener("change", applyFilters));
-  document.getElementById("scopeActiveBtn").addEventListener("click", () => setScope("active"));
-  document.getElementById("scopeHistoryBtn").addEventListener("click", () => setScope("history"));
+  document.getElementById("scopeUsBtn").addEventListener("click", () => setRegionScope("us"));
+  document.getElementById("scopeAllBtn").addEventListener("click", () => setRegionScope("all"));
 
-  renderThreatMeter(allIncidents);
+  renderThreatMeter(allIncidents.filter(isUS)); // "NATIONAL" condition is always US-scoped, independent of the map toggle
   renderStatLine(allIncidents);
   renderTicker(allIncidents);
   renderSpotlight(allIncidents);
-  setScope("active");
+  setRegionScope("us");
 })();

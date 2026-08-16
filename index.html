@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M.E.E.W.S. — Monkey Escape Early Warning System</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐒</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><circle cx=%2212%22 cy=%2212%22 r=%2210%22 fill=%22%23e0332f%22/><circle cx=%2212%22 cy=%2212%22 r=%224%22 fill=%22%23000000%22/></svg>">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,6 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
-      <span class="brand-mark">🐒</span>
       <div>
         <h1>M.E.E.W.S.</h1>
         <p class="brand-sub">Monkey Escape Early Warning System</p>
@@ -34,20 +33,20 @@
   <div class="subbar-inner">
     <span id="statLine">Loading incident database…</span>
     <div class="subbar-actions">
-      <button id="reportBtn" class="btn-alert">⚠ REPORT A SIGHTING</button>
+      <button id="reportBtn" class="btn-alert">REPORT A SIGHTING</button>
     </div>
   </div>
 </nav>
 
 <section class="spotlight" id="spotlight" style="display:none;">
   <div class="spotlight-inner">
-    <div class="spotlight-label">🔦 SPOTLIGHT STORY</div>
+    <div class="spotlight-label">SPOTLIGHT STORY</div>
     <h2 id="spotlightTitle"></h2>
     <div class="spotlight-meta" id="spotlightMeta"></div>
     <p id="spotlightSummary"></p>
     <div class="spotlight-actions">
       <button id="spotlightLocate" class="btn-secondary">Show on map</button>
-      <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source →</a>
+      <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source</a>
     </div>
   </div>
 </section>
@@ -56,11 +55,11 @@
 
   <section class="map-panel">
     <div class="scope-toggle" role="tablist">
-      <button class="scope-btn active" id="scopeActiveBtn" data-scope="active" role="tab" aria-selected="true">🔴 ACTIVE / ONGOING</button>
-      <button class="scope-btn" id="scopeHistoryBtn" data-scope="history" role="tab" aria-selected="false">🕓 FULL HISTORY (2015–2026)</button>
+      <button class="scope-btn active" id="scopeUsBtn" data-scope="us" role="tab" aria-selected="true">US ONLY</button>
+      <button class="scope-btn" id="scopeAllBtn" data-scope="all" role="tab" aria-selected="false">INCLUDE INTERNATIONAL</button>
     </div>
     <div class="panel-title">
-      <h2 id="mapTitle">LIVE THREAT MAP</h2>
+      <h2 id="mapTitle">INCIDENT MAP</h2>
       <div class="legend">
         <span class="legend-item"><i class="dot confirmed-atlarge"></i> Confirmed — At Large</span>
         <span class="legend-item"><i class="dot confirmed-resolved"></i> Confirmed — Resolved</span>
@@ -68,12 +67,10 @@
       </div>
     </div>
     <div id="map"></div>
-    <p id="emptyScopeNote" class="empty-scope-note" hidden>No primates are currently at large or under active monitoring. Switch to Full History to browse the archive.</p>
   </section>
 
   <aside class="sidebar">
     <div class="panel-title"><h2>FILTER LOG</h2></div>
-    <p class="filter-scope-note" id="dateFilterNote">Date filters apply in Full History mode.</p>
     <div class="filters">
       <label>Year
         <select id="yearFilter"><option value="all">All (2015–2026)</option></select>
@@ -94,7 +91,7 @@
       <label class="checkbox-row"><input type="checkbox" class="category-filter" value="trade_legal" checked> Trade / Legal</label>
     </div>
 
-    <div class="panel-title"><h2 id="incidentListTitle">ACTIVE / ONGOING</h2></div>
+    <div class="panel-title"><h2>INCIDENT LOG</h2></div>
     <div id="incidentList" class="incident-list"></div>
   </aside>
 
@@ -107,7 +104,7 @@
 <div class="modal-backdrop" id="reportModalBackdrop">
   <div class="modal" id="reportModal">
     <div class="modal-header">
-      <h2>⚠ FILE A SIGHTING REPORT</h2>
+      <h2>FILE A SIGHTING REPORT</h2>
       <button class="modal-close" id="closeModal">&times;</button>
     </div>
     <form id="reportForm">

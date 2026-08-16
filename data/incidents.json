@@ -1,5 +1,25 @@
 [
   {
+    "id": "2007-in-delhi-bajwa-attack",
+    "title": "Delhi Deputy Mayor Dies After Monkey Attack",
+    "dateStart": "2007-10-20",
+    "dateEnd": "2007-10-21",
+    "city": "New Delhi",
+    "state": "",
+    "country": "IN",
+    "category": "attack",
+    "tier": "confirmed",
+    "status": "resolved",
+    "count": 4,
+    "severity": "major",
+    "summary": "New Delhi deputy mayor S.S. Bajwa was attacked by a group of rhesus macaques while reading on his terrace and fell to the ground below, suffering fatal head injuries. He died in intensive care the next day. The incident intensified debate over the city's large resident monkey population.",
+    "sourceName": "NBC News / CBS News",
+    "sourceUrl": "https://www.nbcnews.com/id/wbna21415039",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "radiusKm": 5
+  },
+  {
     "id": "2015-tx-san-antonio-bank-bite",
     "title": "Illegal Pet Macaque Bites Bank Employee",
     "dateStart": "2015-01-30",
@@ -16,7 +36,8 @@
     "sourceUrl": "https://www.ksat.com/news/2015/01/30/illegal-pet-monkey-bites-woman-at-bank-seized-by-acs-2/",
     "lat": 29.4241,
     "lng": -98.4936,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2015-la-lafayette-university-escape",
@@ -35,7 +56,8 @@
     "sourceUrl": "https://www.nbcnews.com/news/us-news/monkeys-escape-alpha-genesis-research-facility-south-carolina-rcna179077",
     "lat": 30.2241,
     "lng": -92.0198,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2015-nc-charlotte-capuchin-attack-escape",
@@ -54,7 +76,8 @@
     "sourceUrl": "https://www.peta.org/wp-content/uploads/2021/06/Primate-Incident-List-US-only.pdf",
     "lat": 35.2271,
     "lng": -80.8431,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2015-wi-madison-uw-lab-trauma",
@@ -73,7 +96,8 @@
     "sourceUrl": "https://www.aphis.usda.gov/enforcement/university-wisconsin-madison.pdf",
     "lat": 43.0731,
     "lng": -89.4012,
-    "radiusKm": 3
+    "radiusKm": 3,
+    "country": "US"
   },
   {
     "id": "2015-fl-silver-springs-herpes-population",
@@ -92,7 +116,8 @@
     "sourceUrl": "https://wwwnc.cdc.gov/eid/article/24/2/17-1439_article",
     "lat": 29.2108,
     "lng": -82.0575,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2016-sc-alpha-genesis-19-escape",
@@ -111,7 +136,8 @@
     "sourceUrl": "https://www.cbsnews.com/baltimore/news/great-escape-19-lab-monkeys-escape-in-sc-all-recaptured",
     "lat": 32.686,
     "lng": -80.849,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2017-fl-apopka-macaque-sighting",
@@ -130,7 +156,8 @@
     "sourceUrl": "https://abcnews.com/US/florida-wildlife-officers-searching-monkey-loose/story?id=47005712",
     "lat": 28.6934,
     "lng": -81.5322,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2017-pr-cayo-santiago-hurricane-maria",
@@ -149,7 +176,8 @@
     "sourceUrl": "https://www.cbsnews.com/news/how-cayo-santiagos-monkey-research-survived-hurricane-maria-60-minutes/",
     "lat": 18.1497,
     "lng": -65.7444,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2018-tx-san-antonio-airport-escape",
@@ -168,7 +196,8 @@
     "sourceUrl": "https://www.foxnews.com/travel/monkey-escapes-crate-at-san-antonio-airport-flees-to-baggage-area",
     "lat": 29.5337,
     "lng": -98.4698,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2018-fl-okeechobee-home-depot-attack",
@@ -187,7 +216,8 @@
     "sourceUrl": "https://www.foxnews.com/us/home-depot-employee-in-florida-allegedly-attacked-by-shoppers-pet-spider-monkey",
     "lat": 27.2414,
     "lng": -80.8298,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2018-fl-silver-springs-population-growth",
@@ -206,7 +236,8 @@
     "sourceUrl": "https://fortune.com/2018/11/14/herpes-infected-wild-monkeys-florida-growing-larger",
     "lat": 29.2108,
     "lng": -82.0575,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2019-fl-tampa-mystery-monkey-legacy-bite",
@@ -225,7 +256,8 @@
     "sourceUrl": "https://www.tampabay.com/news/environment/wildlife/mystery-monkey-of-tampa-bay-bites-woman-in-st-petersburg/1255631/",
     "lat": 27.7676,
     "lng": -82.6403,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2020-wi-madison-usda-fine",
@@ -244,7 +276,8 @@
     "sourceUrl": "https://www.nbc15.com/2020/07/30/uw-madison-fined-74000-over-animal-research/",
     "lat": 43.0731,
     "lng": -89.4012,
-    "radiusKm": 3
+    "radiusKm": 3,
+    "country": "US"
   },
   {
     "id": "2021-nv-reno-pigtail-macaque-attack",
@@ -263,7 +296,8 @@
     "sourceUrl": "https://www.newsweek.com/pet-monkey-breaking-loose-attacks-neighbors-nevada-1594869",
     "lat": 39.5296,
     "lng": -119.8138,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2021-or-pendleton-chimpanzee-attack",
@@ -282,7 +316,8 @@
     "sourceUrl": "https://www.opb.org/article/2021/06/21/deputy-fatally-shoots-pet-chimpanzee-that-attacked-woman/",
     "lat": 45.6721,
     "lng": -118.7886,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2021-fl-dania-beach-vervet-sanctuary",
@@ -301,7 +336,8 @@
     "sourceUrl": "https://phys.org/news/2021-10-wild-monkey-sanctuary-decades-old-colony.html",
     "lat": 26.0509,
     "lng": -80.1495,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2021-tx-halloween-capuchin-bite",
@@ -320,7 +356,8 @@
     "sourceUrl": "https://fansided.com/2021/11/01/texas-football-coach-pet-monkey-attacks-kid-trick-treating/",
     "lat": 31.9686,
     "lng": -99.9018,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2022-pa-danville-truck-crash-escape",
@@ -339,7 +376,8 @@
     "sourceUrl": "https://www.malaymail.com/news/life/2022/01/23/lab-monkeys-escape-after-us-road-crash-one-on-the-loose/2036971",
     "lat": 40.9612,
     "lng": -76.6122,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2022-ky-louisville-zoo-colobus-escape",
@@ -358,7 +396,28 @@
     "sourceUrl": "https://www.whas11.com/article/life/animals/louisville-zoo-monkey-rajesh-raj-escapes-exhibit-kentucky-safe/417-59870161-8bc0-4fa9-abb9-15754634c842",
     "lat": 38.2527,
     "lng": -85.7585,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
+  },
+  {
+    "id": "2022-jp-yamaguchi-attack-spree",
+    "title": "Wild Monkeys Injure Dozens in Yamaguchi Attack Spree",
+    "dateStart": "2022-07-08",
+    "dateEnd": "2022-08-15",
+    "city": "Yamaguchi",
+    "state": "",
+    "country": "JP",
+    "category": "attack",
+    "tier": "confirmed",
+    "status": "resolved",
+    "count": 3,
+    "severity": "major",
+    "summary": "A string of at least 42 monkey attacks injured residents, mostly children and the elderly, in the Japanese city of Yamaguchi over several weeks; animals entered homes through screen doors and windows. Officials formed a tranquilizer-gun unit and killed one matching macaque, but attacks continued, indicating multiple animals were involved.",
+    "sourceName": "NBC News / VOA",
+    "sourceUrl": "https://www.nbcnews.com/news/world/monkey-killed-japan-attacks-yamaguchi-macaques-rcna40176",
+    "lat": 34.1786,
+    "lng": 131.4737,
+    "radiusKm": 10
   },
   {
     "id": "2022-sc-alpha-genesis-fence-escapes",
@@ -377,7 +436,8 @@
     "sourceUrl": "https://www.nbcnews.com/news/us-news/43-escaped-research-monkeys-still-loose-south-carolina-caretaker-faile-rcna179278",
     "lat": 32.686,
     "lng": -80.849,
-    "radiusKm": 3
+    "radiusKm": 3,
+    "country": "US"
   },
   {
     "id": "2022-fl-palm-harbor-jack-capuchin-escape",
@@ -396,7 +456,8 @@
     "sourceUrl": "https://www.tampabay.com/news/environment/2022/11/07/monkey-escape-pinellas-trail-suncoast-primate-sanctuary-escaped-monkey/",
     "lat": 28.0781,
     "lng": -82.7259,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2023-tx-dallas-zoo-tamarin-theft",
@@ -415,7 +476,8 @@
     "sourceUrl": "https://www.cnn.com/2023/02/01/us/dallas-zoo-tamarin-monkeys-missing-what-we-know/index.html",
     "lat": 32.7825,
     "lng": -96.7477,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2023-ok-dickson",
@@ -434,7 +496,8 @@
     "summary": "A neighbor's pet monkey named Jack got loose, tried to break into Brittany Parker's home, then attacked her \u2014 nearly detaching her ear and requiring reconstructive plastic surgery. A family member shot and killed the monkey days later.",
     "sourceName": "CBS News",
     "sourceUrl": "https://www.cbsnews.com/news/escaped-pet-monkey-attacks-woman-brittany-parker-oklahoma/",
-    "category": "attack"
+    "category": "attack",
+    "country": "US"
   },
   {
     "id": "2023-in-momo",
@@ -453,7 +516,8 @@
     "summary": "A privately-owned capuchin nicknamed \"Momo\" spent roughly a day loose on Indianapolis's east side before being captured and surrendered to the Indianapolis Zoo. Owner later fined; animal ruled unfit to return home.",
     "sourceName": "WTHR 13",
     "sourceUrl": "https://www.wthr.com/article/news/investigations/13-investigates/indianapolis-owner-escaped-monkey-agree-charge-pay-civil-penalty-momo-indiana-dismiss-charge-13-investigates/531-a9c1859f-7654-4109-8c06-a51dd712bed6",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2024-sc-walterboro",
@@ -472,7 +536,8 @@
     "summary": "A 15-year-old pet macaque named Bradley escaped from a residence. After several days searching, officials confirmed the animal was not recovered alive.",
     "sourceName": "CNN",
     "sourceUrl": "https://www.cnn.com/2024/05/25/us/primate-escape-walterboro-south-carolina/index.html",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2024-in-mara",
@@ -491,7 +556,8 @@
     "summary": "A chimpanzee named Mara briefly got past a barrier in the zoo's newly opened International Chimpanzee Complex. Contained on zoo grounds and returned to the exhibit same day.",
     "sourceName": "WTHR 13",
     "sourceUrl": "https://www.wthr.com/article/life/animals/chimpanzee-escapes-from-indianapolis-zoo-mara/531-70c6ffa7-004d-4afb-8543-6ab7736d1796",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2024-ga-yerkes-infant-amputation",
@@ -510,7 +576,8 @@
     "sourceUrl": "https://www.peta.org/media/news-releases/peta-statement-critical-violation-at-yerkes-national-primate-research-center/",
     "lat": 33.9526,
     "lng": -83.9877,
-    "radiusKm": 3
+    "radiusKm": 3,
+    "country": "US"
   },
   {
     "id": "2025-md-primate-ownership-ban-effective",
@@ -529,7 +596,8 @@
     "sourceUrl": "https://www.wusa9.com/article/news/local/maryland/maryland-governor-signs-bill-banning-exotic-animals-from-traveling-shows-wes-moore/65-7db64eb6-3bf7-4e26-83ac-9fc6a7c58846",
     "lat": 38.9784,
     "lng": -76.4922,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2024-tn-memphis-zoo",
@@ -548,7 +616,8 @@
     "summary": "A male colobus monkey bent open his transport crate while being moved between zoo buildings. Stayed near his familiar exhibit and was recontained same day. Zoo grounds briefly secured. This was the same colobus monkey, 'Raj,' who had previously escaped his enclosure at Louisville Zoo in 2022 before being transferred to Memphis.",
     "sourceName": "FOX13 Memphis",
     "sourceUrl": "https://www.fox13memphis.com/news/monkey-briefly-escapes-containment-at-memphis-zoo/article_27363d06-8827-11ef-b276-e3227108e31c.html",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2024-sc-alphagenesis",
@@ -567,7 +636,8 @@
     "summary": "43 young rhesus macaques escaped a primate research facility after a caretaker failed to secure an enclosure door. Authorities urged nearby residents to keep doors and windows locked. Animals ranged through surrounding woodland for nearly three months, surviving a winter storm, before the final holdouts were lured back with peanut butter and jelly sandwiches.",
     "sourceName": "NBC News / CBS News / NPR",
     "sourceUrl": "https://www.nbcnews.com/news/us-news/43-research-monkeys-escaped-south-carolina-facility-recaptured-rcna189269",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2024-fl-orange-city-sightings",
@@ -586,7 +656,8 @@
     "sourceUrl": "https://www.cbsnews.com/news/monkeys-roaming-orange-city-florida/",
     "lat": 28.9483,
     "lng": -81.2998,
-    "radiusKm": 25
+    "radiusKm": 25,
+    "country": "US"
   },
   {
     "id": "2024-ca-madera-rolls-royce-trafficking",
@@ -605,7 +676,8 @@
     "sourceUrl": "https://krdo.com/news/2025/01/02/driver-pulled-over-in-california-had-baby-monkey-in-his-rolls-royce-highway-patrol-says/",
     "lat": 36.9613,
     "lng": -120.0607,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2025-md-towson-photoshoot-cruelty",
@@ -624,7 +696,8 @@
     "sourceUrl": "https://www.thebanner.com/community/criminal-justice/exotic-photoshoot-animal-cruelty-charges-SOB4YTMS6JCVPNODJ5BVFBMPSI/",
     "lat": 39.4015,
     "lng": -76.6019,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2025-nc-troutman-capuchin-escape",
@@ -643,7 +716,8 @@
     "sourceUrl": "https://www.wral.com/news/local/escaped-monkey-update-hit-by-car-sept-2025/",
     "lat": 35.6979,
     "lng": -80.8656,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
   },
   {
     "id": "2025-ms-i59",
@@ -662,7 +736,8 @@
     "summary": "A truck hauling 21 rhesus macaques from a Tulane University-linked research shipment overturned on Interstate 59, spilling crates labeled \"live monkeys\" into roadside grass. Several animals were killed in the crash or during the search; the last free-ranging holdouts were recovered days later. Owner and exact research purpose were not immediately disclosed, fueling public speculation. One survivor, nicknamed 'Forrest,' was later rehomed at a New Jersey sanctuary; separately, a local resident shot and killed one of the loose monkeys near their home, citing fear for their children's safety.",
     "sourceName": "Fortune / Mississippi Today",
     "sourceUrl": "https://fortune.com/2025/10/31/research-monkey-escape-truck-mississippi-tulane-biomedical-center/",
-    "category": "escape"
+    "category": "escape",
+    "country": "US"
   },
   {
     "id": "2025-in-indianapolis-chimp-escape",
@@ -681,7 +756,28 @@
     "sourceUrl": "https://www.newsweek.com/chimpanzee-escapes-indianapolis-zoo-lockdown-11050279",
     "lat": 39.782,
     "lng": -86.169,
-    "radiusKm": 12
+    "radiusKm": 12,
+    "country": "US"
+  },
+  {
+    "id": "2026-gi-gibraltar-tourist-mauling",
+    "title": "Troop of Barbary Macaques Maul Tourist on the Rock",
+    "dateStart": "2026-02-01",
+    "dateEnd": "2026-02-01",
+    "city": "Gibraltar",
+    "state": "",
+    "country": "GI",
+    "category": "attack",
+    "tier": "confirmed",
+    "status": "resolved",
+    "count": 3,
+    "severity": "moderate",
+    "summary": "A troop of Barbary macaques attacked a 70-year-old visitor on Gibraltar's Upper Rock, leaving her with serious injuries, lasting nerve pain, and psychological trauma. Gibraltar's famous free-ranging macaque population is a major tourist draw but has a history of occasional aggressive encounters. Date is approximate based on available reporting.",
+    "sourceName": "Gibraltar Chronicle / IBTimes UK",
+    "sourceUrl": "https://www.chronicle.gi/woman-says-she-will-never-recover-after-monkey-attack-on-skywalk/",
+    "lat": 36.1408,
+    "lng": -5.3536,
+    "radiusKm": 5
   },
   {
     "id": "2026-fl-monkey-whisperer-second-sentencing",
@@ -700,7 +796,8 @@
     "sourceUrl": "https://www.justice.gov/usao-mdfl/pr/monkey-whisperer-sentenced-federal-prison-trafficking-primates-while-probation-same",
     "lat": 27.5847,
     "lng": -82.4243,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2026-ny-grand-island-spider-monkey-seizure",
@@ -719,7 +816,8 @@
     "sourceUrl": "https://www.btpm.org/local/2026-05-08/wounded-spider-monkey-illegally-kept-as-pet-seized-from-grand-island-home",
     "lat": 43.0209,
     "lng": -78.9601,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
   },
   {
     "id": "2026-fl-fws-trafficking-story",
@@ -738,7 +836,28 @@
     "sourceUrl": "https://www.fws.gov/story/2026-05/dismantling-illegal-monkey-trafficking-florida",
     "lat": 27.9506,
     "lng": -82.4572,
-    "radiusKm": 8
+    "radiusKm": 8,
+    "country": "US"
+  },
+  {
+    "id": "2026-th-lopburi-mass-escape",
+    "title": "Nearly 100 Monkeys Escape Enclosure, Invade Lopburi Neighborhoods",
+    "dateStart": "2026-06-29",
+    "dateEnd": "2026-06-30",
+    "city": "Lopburi",
+    "state": "",
+    "country": "TH",
+    "category": "escape",
+    "tier": "confirmed",
+    "status": "resolved",
+    "count": 99,
+    "severity": "major",
+    "summary": "Nearly 100 long-tailed macaques broke out of a damaged municipal enclosure in Lopburi, Thailand, invading homes and a police station before staff prevented over 1,000 additional monkeys from joining the escape. Officials recaptured 99 using tranquilizer darts and baited cages, and reinforced the enclosure with a double-layer design.",
+    "sourceName": "Fox News / Bangkok Post",
+    "sourceUrl": "https://www.bangkokpost.com/thailand/general/2903688/monkeys-escape-cage-invade-police-station-in-thailands-lop-buri",
+    "lat": 14.7995,
+    "lng": 100.6534,
+    "radiusKm": 15
   },
   {
     "id": "2026-wi-uw-madison-amputation-incidents",
@@ -757,6 +876,7 @@
     "sourceUrl": "https://riseforanimals.org/news/news-aug-14-2026/",
     "lat": 43.0731,
     "lng": -89.4012,
-    "radiusKm": 3
+    "radiusKm": 3,
+    "country": "US"
   }
 ]
