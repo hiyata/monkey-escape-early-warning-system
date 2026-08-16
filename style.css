@@ -49,42 +49,44 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 .header-inner{
   max-width:1300px;
   margin:0 auto;
-  padding:10px 20px;
+  padding:14px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:16px;
   flex-wrap:wrap;
 }
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{font-size:34px;filter: drop-shadow(0 0 6px rgba(224,51,47,.5));}
 .brand h1{
   margin:0;
-  font-size:20px;
+  font-size:22px;
   letter-spacing:2px;
   font-family:"Courier New", monospace;
   color:#fff;
 }
+.brand-sub{margin:0;font-size:12px;color:var(--text-dim);letter-spacing:0.5px;}
 
 .threat-meter{
-  display:flex;
-  align-items:baseline;
-  gap:8px;
   background:var(--bg-panel);
   border:1px solid var(--border);
   border-radius:4px;
-  padding:6px 14px;
+  padding:8px 16px;
+  text-align:right;
+  min-width:260px;
 }
 .threat-label{
+  display:block;
   font-size:10px;
-  letter-spacing:1px;
+  letter-spacing:1.5px;
   color:var(--text-dim);
-  white-space:nowrap;
 }
 .threat-value{
+  display:block;
   font-family:"Courier New", monospace;
-  font-size:14px;
+  font-size:20px;
   font-weight:bold;
-  letter-spacing:0.5px;
-  white-space:nowrap;
+  letter-spacing:1px;
 }
 .threat-value.level-low{color:var(--green);}
 .threat-value.level-guarded{color:var(--blue);}
@@ -98,13 +100,21 @@ body{min-height:100vh;display:flex;flex-direction:column;}
   50%{opacity:.55;}
 }
 
-.stat-line{
-  font-size:12px;
-  color:var(--text-dim);
-  margin:0 0 14px;
-  padding-bottom:14px;
-  border-bottom:1px solid var(--border);
+/* ---- Subbar ---- */
+.subbar{background:var(--bg-panel-2);border-bottom:1px solid var(--border);}
+.subbar-inner{
+  max-width:1300px;
+  margin:0 auto;
+  padding:10px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
 }
+#statLine{font-size:13px;color:var(--text-dim);}
+
+.subbar-actions{display:flex;align-items:center;gap:10px;}
 
 .btn-nav{
   color:var(--text-dim);
@@ -118,46 +128,45 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 }
 .btn-nav:hover{color:#fff;border-color:var(--text-dim);}
 
-/* ---- Spotlight (single-line strip inside the map card) ---- */
-.spotlight-bar{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  flex-wrap:wrap;
-  background:var(--bg-panel-2);
-  border:1px solid var(--red-dim);
-  border-radius:4px;
-  padding:8px 12px;
-  margin-bottom:12px;
-  font-size:12px;
+.spotlight{
+  background:linear-gradient(180deg,#1a1210,#12151a);
+  border-bottom:1px solid var(--red-dim);
 }
-.spotlight-tag{
+.spotlight-inner{
+  max-width:1300px;
+  margin:0 auto;
+  padding:18px 20px;
+}
+.spotlight-label{
   font-family:"Courier New", monospace;
-  font-size:10px;
-  letter-spacing:1px;
+  font-size:11px;
+  letter-spacing:2px;
   color:var(--amber);
-  flex-shrink:0;
+  margin-bottom:6px;
 }
-.spotlight-title{
+.spotlight-inner h2{
+  margin:0 0 6px;
+  font-size:22px;
   color:#fff;
-  font-weight:600;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  flex:1;
-  min-width:120px;
 }
-.spotlight-meta{color:var(--text-dim);flex-shrink:0;white-space:nowrap;}
-.spotlight-link{
-  background:none;
-  border:none;
-  color:var(--blue);
+.spotlight-meta{
   font-size:12px;
-  cursor:pointer;
-  flex-shrink:0;
-  padding:0;
+  color:var(--text-dim);
+  margin-bottom:10px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
 }
-.spotlight-link:hover{text-decoration:underline;}
+.spotlight-inner p{
+  margin:0 0 14px;
+  color:var(--text);
+  font-size:14px;
+  line-height:1.5;
+  max-width:800px;
+}
+.spotlight-actions{display:flex;gap:10px;}
+.spotlight-actions a.btn-secondary{text-decoration:none;display:inline-block;}
 
 .btn-alert{
   background:var(--red);
