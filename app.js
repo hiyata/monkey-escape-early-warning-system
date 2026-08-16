@@ -240,17 +240,22 @@ function activeCategoryFilters(){
   return [...document.querySelectorAll(".category-filter:checked")].map(el => el.value);
 }
 
+let viewScope = "active"; // "active" = currently at_large/monitoring only; "history" = full archive + date filters
+
 function applyFilters(){
-  const year = document.getElementById("yearFilter").value;
-  const month = document.getElementById("monthFilter").value;
   const showConfirmed = document.getElementById("showConfirmed").checked;
   const showReported = document.getElementById("showReported").checked;
   const activeCategories = activeCategoryFilters();
+  const year = document.getElementById("yearFilter").value;
+  const month = document.getElementById("monthFilter").value;
 
   const filtered = allIncidents.filter(i => {
-    const [iy, im] = i.dateStart.split("-");
-    if(year !== "all" && iy !== year) return false;
-    if(month !== "all" && im !== month) return false;
+    if(viewScope === "active" && !(i.status === "at_large" || i.status === "monitoring")) return false;
+    if(viewScope === "history"){
+      const [iy, im] = i.dateStart.split("-");
+      if(year !== "all" && iy !== year) return false;
+      if(month !== "all" && im !== month) return false;
+    }
     if(i.tier === "confirmed" && !showConfirmed) return false;
     if(i.tier === "reported" && !showReported) return false;
     if(!activeCategories.includes(i.category || "escape")) return false;
@@ -260,6 +265,27 @@ function applyFilters(){
   renderMap(filtered);
   renderIncidentList(filtered);
   renderStatLine(filtered);
+
+  const emptyNote = document.getElementById("emptyScopeNote");
+  const mapEl = document.getElementById("map");
+  const isEmptyActive = viewScope === "active" && filtered.length === 0;
+  emptyNote.hidden = !isEmptyActive;
+  mapEl.style.display = isEmptyActive ? "none" : "";
+}
+
+function setScope(scope){
+  viewScope = scope;
+  document.getElementById("scopeActiveBtn").classList.toggle("active", scope === "active");
+  document.getElementById("scopeActiveBtn").setAttribute("aria-selected", scope === "active");
+  document.getElementById("scopeHistoryBtn").classList.toggle("active", scope === "history");
+  document.getElementById("scopeHistoryBtn").setAttribute("aria-selected", scope === "history");
+
+  document.getElementById("mapTitle").textContent = scope === "active" ? "LIVE THREAT MAP" : "FULL INCIDENT ARCHIVE";
+  document.getElementById("incidentListTitle").textContent = scope === "active" ? "ACTIVE / ONGOING" : "INCIDENT LOG";
+  document.getElementById("yearFilter").disabled = scope === "active";
+  document.getElementById("monthFilter").disabled = scope === "active";
+
+  applyFilters();
 }
 
 function renderIncidentList(incidents){
@@ -332,7 +358,7 @@ function wireReportForm(){
       count,
       severity: "minor",
       radiusKm: 15,
-      summary: `${desc} (Submitted by ${name}. Unverified — for entertainment purposes.)`,
+      summary: `${desc} (Submitted by ${name}. Unverified.)`,
       sourceName: "Community submission",
       sourceUrl: ""
     };
@@ -340,10 +366,10 @@ function wireReportForm(){
     saveCommunityReport(report);
     allIncidents.push(report);
     populateYearOptionIfNeeded(date.slice(0,4));
-    applyFilters();
     renderThreatMeter(allIncidents);
     renderTicker(allIncidents);
     renderSpotlight(allIncidents);
+    setScope("active"); // surface the new report immediately, regardless of current scope
     form.reset();
     close();
   });
@@ -389,10 +415,12 @@ function approxCoordsForState(abbr){
   document.getElementById("showConfirmed").addEventListener("change", applyFilters);
   document.getElementById("showReported").addEventListener("change", applyFilters);
   document.querySelectorAll(".category-filter").forEach(el => el.addEventListener("change", applyFilters));
+  document.getElementById("scopeActiveBtn").addEventListener("click", () => setScope("active"));
+  document.getElementById("scopeHistoryBtn").addEventListener("click", () => setScope("history"));
 
   renderThreatMeter(allIncidents);
   renderStatLine(allIncidents);
   renderTicker(allIncidents);
   renderSpotlight(allIncidents);
-  applyFilters();
+  setScope("active");
 })();
