@@ -1,0 +1,331 @@
+:root{
+  --bg: #0b0d10;
+  --bg-panel: #12151a;
+  --bg-panel-2: #171b21;
+  --border: #262c35;
+  --text: #d7dce2;
+  --text-dim: #8891a0;
+  --red: #e0332f;
+  --red-dim: #7a1f1d;
+  --amber: #e0a52f;
+  --green: #3fae5c;
+  --blue: #3f8ae0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+body{min-height:100vh;display:flex;flex-direction:column;}
+
+/* ---- Ticker ---- */
+.tickertape{
+  background:#000;
+  border-bottom:1px solid var(--red-dim);
+  overflow:hidden;
+  white-space:nowrap;
+  height:28px;
+  display:flex;
+  align-items:center;
+}
+.tickertape-track{
+  display:inline-block;
+  padding-left:100%;
+  color:var(--red);
+  font-family:"Courier New", monospace;
+  font-size:12px;
+  letter-spacing:0.5px;
+  animation:ticker 45s linear infinite;
+}
+@keyframes ticker{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-100%);}
+}
+
+/* ---- Header ---- */
+.site-header{
+  background:linear-gradient(180deg,#14171c,#0e1013);
+  border-bottom:2px solid var(--red);
+}
+.header-inner{
+  max-width:1300px;
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{font-size:34px;filter: drop-shadow(0 0 6px rgba(224,51,47,.5));}
+.brand h1{
+  margin:0;
+  font-size:22px;
+  letter-spacing:2px;
+  font-family:"Courier New", monospace;
+  color:#fff;
+}
+.brand-sub{margin:0;font-size:12px;color:var(--text-dim);letter-spacing:0.5px;}
+
+.threat-meter{
+  background:var(--bg-panel);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:8px 16px;
+  text-align:right;
+  min-width:260px;
+}
+.threat-label{
+  display:block;
+  font-size:10px;
+  letter-spacing:1.5px;
+  color:var(--text-dim);
+}
+.threat-value{
+  display:block;
+  font-family:"Courier New", monospace;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.threat-value.level-low{color:var(--green);}
+.threat-value.level-guarded{color:var(--blue);}
+.threat-value.level-elevated{color:var(--amber);}
+.threat-value.level-high, .threat-value.level-severe{
+  color:var(--red);
+  animation:pulseText 1.2s ease-in-out infinite;
+}
+@keyframes pulseText{
+  0%,100%{opacity:1;}
+  50%{opacity:.55;}
+}
+
+/* ---- Subbar ---- */
+.subbar{background:var(--bg-panel-2);border-bottom:1px solid var(--border);}
+.subbar-inner{
+  max-width:1300px;
+  margin:0 auto;
+  padding:10px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+#statLine{font-size:13px;color:var(--text-dim);}
+
+.btn-alert{
+  background:var(--red);
+  color:#fff;
+  border:none;
+  padding:9px 16px;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:0.5px;
+  border-radius:4px;
+  cursor:pointer;
+}
+.btn-alert:hover{background:#c72a26;}
+.btn-secondary{
+  background:transparent;
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:9px 16px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+/* ---- Layout ---- */
+.layout{
+  max-width:1300px;
+  width:100%;
+  margin:0 auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:1fr 340px;
+  gap:20px;
+  flex:1;
+}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;}
+}
+
+.panel-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:10px;
+}
+.panel-title h2{
+  font-family:"Courier New", monospace;
+  font-size:14px;
+  letter-spacing:1.5px;
+  margin:0;
+  color:var(--text-dim);
+  border-left:3px solid var(--red);
+  padding-left:8px;
+}
+
+.map-panel{
+  background:var(--bg-panel);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:14px;
+}
+#map{
+  height:560px;
+  border-radius:4px;
+  border:1px solid var(--border);
+}
+
+.legend{display:flex;gap:14px;flex-wrap:wrap;}
+.legend-item{font-size:11px;color:var(--text-dim);display:flex;align-items:center;gap:5px;}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+.dot.confirmed-atlarge{background:var(--red);box-shadow:0 0 6px var(--red);}
+.dot.confirmed-resolved{background:var(--text-dim);}
+.dot.reported{background:var(--amber);}
+
+/* ---- Sidebar ---- */
+.sidebar{
+  background:var(--bg-panel);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+}
+.filters{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:16px;
+  padding-bottom:16px;
+  border-bottom:1px solid var(--border);
+}
+.filters label{
+  font-size:12px;
+  color:var(--text-dim);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.filters select{
+  background:var(--bg-panel-2);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px;
+  border-radius:4px;
+  font-size:13px;
+}
+.checkbox-row{flex-direction:row !important;align-items:center;gap:6px !important;}
+
+.incident-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-height:560px;
+  overflow-y:auto;
+}
+.incident-card{
+  background:var(--bg-panel-2);
+  border:1px solid var(--border);
+  border-left:4px solid var(--text-dim);
+  border-radius:4px;
+  padding:10px 12px;
+  cursor:pointer;
+}
+.incident-card:hover{border-color:var(--red);}
+.incident-card.tier-confirmed.severity-major{border-left-color:var(--red);}
+.incident-card.tier-confirmed{border-left-color:#5a6272;}
+.incident-card.tier-reported{border-left-color:var(--amber);}
+.incident-card h3{margin:0 0 4px;font-size:13px;color:#fff;}
+.incident-card .meta{font-size:11px;color:var(--text-dim);margin-bottom:4px;}
+.incident-card .badge{
+  display:inline-block;
+  font-size:9px;
+  letter-spacing:0.5px;
+  padding:2px 6px;
+  border-radius:3px;
+  font-weight:700;
+  margin-right:4px;
+}
+.badge.confirmed{background:#2a3040;color:#9fb3d9;}
+.badge.reported{background:#3a2f16;color:var(--amber);}
+.badge.major{background:var(--red-dim);color:#ffb3b0;}
+.badge.at_large{background:var(--red);color:#fff;}
+.badge.resolved{background:#20262f;color:var(--text-dim);}
+
+/* ---- Footer ---- */
+.disclaimer{
+  background:#000;
+  border-top:1px solid var(--red-dim);
+  padding:16px 20px;
+  font-size:11px;
+  color:var(--text-dim);
+  line-height:1.5;
+}
+.disclaimer p{max-width:1300px;margin:0 auto;}
+
+/* ---- Modal ---- */
+.modal-backdrop{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  padding:20px;
+}
+.modal-backdrop.open{display:flex;}
+.modal{
+  background:var(--bg-panel);
+  border:1px solid var(--red-dim);
+  border-radius:6px;
+  width:100%;
+  max-width:480px;
+  max-height:90vh;
+  overflow-y:auto;
+  padding:20px;
+}
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+.modal-header h2{font-size:16px;margin:0;color:var(--red);}
+.modal-close{
+  background:none;border:none;color:var(--text-dim);
+  font-size:22px;cursor:pointer;line-height:1;
+}
+#reportForm{display:flex;flex-direction:column;gap:12px;}
+#reportForm label{
+  display:flex;flex-direction:column;gap:4px;
+  font-size:12px;color:var(--text-dim);
+}
+#reportForm input,#reportForm select,#reportForm textarea{
+  background:var(--bg-panel-2);
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:8px;
+  font-size:13px;
+  font-family:inherit;
+}
+.modal-note{font-size:11px;color:var(--text-dim);margin:0;}
+.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:4px;}
+
+/* Leaflet popup styling override */
+.leaflet-popup-content-wrapper{
+  background:var(--bg-panel);
+  color:var(--text);
+  border-radius:4px;
+}
+.leaflet-popup-tip{background:var(--bg-panel);}
+.leaflet-popup-content h3{margin:0 0 6px;font-size:13px;color:#fff;}
+.leaflet-popup-content p{margin:0 0 4px;font-size:12px;color:var(--text-dim);}
+.leaflet-popup-content a{color:var(--blue);}

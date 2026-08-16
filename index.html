@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.E.E.W.S. — Monkey Escape Early Warning System</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐒</text></svg>">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tickertape" id="tickertape">
+  <div class="tickertape-track" id="tickertapeTrack">LOADING FEED…</div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">🐒</span>
+      <div>
+        <h1>M.E.E.W.S.</h1>
+        <p class="brand-sub">Monkey Escape Early Warning System</p>
+      </div>
+    </div>
+    <div class="threat-meter" id="threatMeter">
+      <span class="threat-label">NATIONAL THREAT CONDITION</span>
+      <span class="threat-value" id="threatValue">ASSESSING…</span>
+    </div>
+  </div>
+</header>
+
+<nav class="subbar">
+  <div class="subbar-inner">
+    <span id="statLine">Loading incident database…</span>
+    <button id="reportBtn" class="btn-alert">⚠ REPORT A SIGHTING</button>
+  </div>
+</nav>
+
+<main class="layout">
+
+  <section class="map-panel">
+    <div class="panel-title">
+      <h2>LIVE THREAT MAP</h2>
+      <div class="legend">
+        <span class="legend-item"><i class="dot confirmed-atlarge"></i> Confirmed — At Large</span>
+        <span class="legend-item"><i class="dot confirmed-resolved"></i> Confirmed — Resolved</span>
+        <span class="legend-item"><i class="dot reported"></i> Reported — Unverified</span>
+      </div>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="panel-title"><h2>FILTER LOG</h2></div>
+    <div class="filters">
+      <label>Year
+        <select id="yearFilter"><option value="all">All (2023–2026)</option></select>
+      </label>
+      <label>Month
+        <select id="monthFilter"><option value="all">All months</option></select>
+      </label>
+      <label class="checkbox-row"><input type="checkbox" id="showConfirmed" checked> Show Confirmed</label>
+      <label class="checkbox-row"><input type="checkbox" id="showReported" checked> Show Reported</label>
+    </div>
+
+    <div class="panel-title"><h2>INCIDENT LOG</h2></div>
+    <div id="incidentList" class="incident-list"></div>
+  </aside>
+
+</main>
+
+<footer class="disclaimer">
+  <p>M.E.E.W.S. is an independent, crowd-sourced tracker compiled from public news reporting. Not affiliated with any government agency, zoo, or research institution. Confirmed entries link their source; reported entries are unverified. If you encounter a loose animal, do not approach it — contact local animal control.</p>
+</footer>
+
+<div class="modal-backdrop" id="reportModalBackdrop">
+  <div class="modal" id="reportModal">
+    <div class="modal-header">
+      <h2>⚠ FILE A SIGHTING REPORT</h2>
+      <button class="modal-close" id="closeModal">&times;</button>
+    </div>
+    <form id="reportForm">
+      <label>Date of sighting
+        <input type="date" id="rDate" required>
+      </label>
+      <label>City
+        <input type="text" id="rCity" required placeholder="e.g. Athens">
+      </label>
+      <label>State
+        <select id="rState" required></select>
+      </label>
+      <label>Number of monkeys observed
+        <input type="number" id="rCount" min="1" value="1" required>
+      </label>
+      <label>Description
+        <textarea id="rDesc" rows="3" placeholder="What did you see? Be specific." required></textarea>
+      </label>
+      <label>Your name (optional)
+        <input type="text" id="rName" placeholder="Anonymous">
+      </label>
+      <p class="modal-note">Submissions are marked <strong>REPORTED / UNVERIFIED</strong> and are not fact-checked. Stored only in your browser for now — nothing is sent to a server or visible to other visitors yet.</p>
+      <div class="modal-actions">
+        <button type="button" id="cancelReport" class="btn-secondary">Cancel</button>
+        <button type="submit" class="btn-alert">Submit Report</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
