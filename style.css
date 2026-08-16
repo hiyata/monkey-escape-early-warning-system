@@ -313,6 +313,12 @@ body{min-height:100vh;display:flex;flex-direction:column;}
   max-height:560px;
   overflow-y:auto;
 }
+.load-more-btn{
+  width:100%;
+  font-size:12px;
+  padding:10px;
+  flex-shrink:0;
+}
 .incident-card{
   background:var(--bg-panel-2);
   border:1px solid var(--border);
@@ -415,10 +421,7 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 /* ---- Mobile ---- */
 @media (max-width:900px){
   #map{height:420px;}
-  .incident-list{
-    max-height:none;
-    overflow-y:visible;
-  }
+  .incident-list{max-height:400px;}
 }
 
 @media (max-width:480px){

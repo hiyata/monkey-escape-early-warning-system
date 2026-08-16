@@ -268,6 +268,7 @@ function applyFilters(){
     return true;
   });
 
+  incidentListPage = 1;
   renderMap(filtered);
   renderIncidentList(filtered);
   renderStatLine(filtered);
@@ -283,6 +284,9 @@ function setRegionScope(scope){
   applyFilters();
 }
 
+const INCIDENT_PAGE_SIZE = 12;
+let incidentListPage = 1;
+
 function renderIncidentList(incidents){
   const list = document.getElementById("incidentList");
   list.innerHTML = "";
@@ -293,7 +297,8 @@ function renderIncidentList(incidents){
     return;
   }
 
-  sorted.forEach(inc => {
+  const visibleCount = Math.min(sorted.length, INCIDENT_PAGE_SIZE * incidentListPage);
+  sorted.slice(0, visibleCount).forEach(inc => {
     const card = document.createElement("div");
     card.className = `incident-card tier-${inc.tier} severity-${inc.severity||"minor"}`;
     card.innerHTML = `
@@ -311,6 +316,17 @@ function renderIncidentList(incidents){
     });
     list.appendChild(card);
   });
+
+  if(visibleCount < sorted.length){
+    const moreBtn = document.createElement("button");
+    moreBtn.className = "btn-secondary load-more-btn";
+    moreBtn.textContent = `Show more (${sorted.length - visibleCount} remaining)`;
+    moreBtn.addEventListener("click", () => {
+      incidentListPage++;
+      renderIncidentList(incidents);
+    });
+    list.appendChild(moreBtn);
+  }
 }
 
 function wireReportForm(){
