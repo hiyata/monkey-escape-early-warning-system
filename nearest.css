@@ -1,0 +1,110 @@
+.nearest-layout{
+  max-width:1300px;
+  width:100%;
+  margin:0 auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:380px 1fr;
+  gap:20px;
+  flex:1;
+}
+@media (max-width:900px){
+  .nearest-layout{grid-template-columns:1fr;}
+}
+
+.finder-panel{
+  background:var(--bg-panel);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+}
+.finder-panel h2{
+  margin:0 0 8px;
+  font-size:18px;
+  color:#fff;
+}
+.finder-sub{
+  font-size:13px;
+  color:var(--text-dim);
+  line-height:1.5;
+  margin:0 0 16px;
+}
+
+.finder-form{
+  display:flex;
+  gap:8px;
+  margin-bottom:8px;
+}
+#addressInput{
+  flex:1;
+  background:var(--bg-panel-2);
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:10px 12px;
+  font-size:14px;
+  min-width:0;
+}
+#addressInput:focus{outline:1px solid var(--red);}
+
+.finder-status{
+  font-size:12px;
+  color:var(--text-dim);
+  min-height:16px;
+  margin:0 0 12px;
+}
+.finder-status.error{color:var(--red);}
+
+.results-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  overflow-y:auto;
+}
+.result-card{
+  background:var(--bg-panel-2);
+  border:1px solid var(--border);
+  border-left:4px solid var(--text-dim);
+  border-radius:4px;
+  padding:12px;
+  cursor:pointer;
+}
+.result-card:hover{border-color:var(--red);}
+.result-card.nearest{border-left-color:var(--red);}
+.result-card .result-rank{
+  font-family:"Courier New", monospace;
+  font-size:11px;
+  color:var(--text-dim);
+  letter-spacing:1px;
+}
+.result-card h3{margin:4px 0 2px;font-size:14px;color:#fff;}
+.result-card .result-meta{font-size:12px;color:var(--text-dim);}
+.result-card .result-distance{
+  font-size:20px;
+  font-weight:700;
+  color:var(--red);
+  margin-top:6px;
+}
+.result-card .result-distance small{font-size:12px;font-weight:400;color:var(--text-dim);}
+.result-card .badge.type-zoo{background:#1a1e30;color:var(--blue);}
+.result-card .badge.type-sanctuary{background:#16302a;color:#5fd1b8;}
+.result-card .badge.type-research_facility{background:#2a1a1a;color:#e0847f;}
+
+.finder-map-panel{
+  background:var(--bg-panel);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:14px;
+}
+#nearestMap{
+  height:100%;
+  min-height:400px;
+  border-radius:4px;
+  border:1px solid var(--border);
+}
+@media (max-width:900px){
+  #nearestMap{height:400px;}
+}

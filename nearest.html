@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>M.E.E.W.S. — Nearest Primates</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><circle cx=%2212%22 cy=%2212%22 r=%2210%22 fill=%22%23e0332f%22/><circle cx=%2212%22 cy=%2212%22 r=%224%22 fill=%22%23000000%22/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="M.E.E.W.S.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b0d10">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nearest.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div>
+        <h1>M.E.E.W.S.</h1>
+        <p class="brand-sub">Nearest Primates</p>
+      </div>
+    </div>
+    <a class="btn-nav" href="index.html">BACK TO MAP</a>
+  </div>
+</header>
+
+<main class="nearest-layout">
+
+  <section class="finder-panel">
+    <h2>How far away is the nearest primate?</h2>
+    <p class="finder-sub">Enter an address or city, and we'll find the closest zoo, sanctuary, or research facility known to house non-human primates from our database of major US institutions.</p>
+
+    <form id="finderForm" class="finder-form">
+      <input type="text" id="addressInput" placeholder="e.g. 350 Fifth Avenue, New York, NY" required autocomplete="off">
+      <button type="submit" id="findBtn" class="btn-alert">FIND NEAREST</button>
+    </form>
+    <p id="finderStatus" class="finder-status"></p>
+
+    <div id="resultsList" class="results-list"></div>
+  </section>
+
+  <section class="finder-map-panel">
+    <div id="nearestMap"></div>
+  </section>
+
+</main>
+
+<footer class="disclaimer">
+  <p>This locator draws from a curated list of ~90 major AZA-accredited zoos and known primate sanctuaries in the US — it is not an exhaustive record of every location that houses a non-human primate (private owners and non-public research facilities aren't included). Distances are straight-line ("as the crow flies"), not driving distance. Address lookup uses the Photon geocoder (built on OpenStreetMap data); nothing you enter is stored by this site.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="nearest.js"></script>
+</body>
+</html>
