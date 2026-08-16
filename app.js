@@ -18,7 +18,7 @@ let map, markerLayer;
 let allIncidents = [];
 
 async function loadIncidents(){
-  const res = await fetch("data/incidents.json");
+  const res = await fetch("data/incidents.json?v=" + Date.now(), {cache: "no-store"});
   const base = await res.json();
   const community = loadCommunityReports();
   return [...base, ...community];
@@ -99,15 +99,24 @@ function escapeHtml(str){
   return div.innerHTML;
 }
 
-function computeThreatLevel(incidents){
-  const activeMajor = incidents.filter(i => i.status === "at_large" && i.severity === "major").length;
-  const activeAny = incidents.filter(i => i.status === "at_large").length;
-  const recentReported = incidents.filter(i => i.tier === "reported").length;
+const THREAT_RECENT_DAYS = 30;
 
-  if(activeMajor > 0) return {level:"severe", label:"SEVERE — MULTIPLE PRIMATES AT LARGE"};
-  if(activeAny > 0) return {level:"high", label:"HIGH — PRIMATE(S) CURRENTLY AT LARGE"};
-  if(recentReported > 3) return {level:"elevated", label:"ELEVATED — UNVERIFIED SIGHTING CLUSTER"};
-  if(recentReported > 0) return {level:"guarded", label:"GUARDED — ISOLATED REPORTS UNDER REVIEW"};
+function computeThreatLevel(incidents){
+  // Only incidents that are CURRENTLY open (status: at_large) can raise the threat level.
+  // Resolved/contained/monitoring history — no matter how many "reported" (unverified)
+  // entries exist in the archive — must never move today's reading.
+  const now = new Date();
+  const isRecent = dateStr => (now - new Date(dateStr)) / 86400000 <= THREAT_RECENT_DAYS;
+
+  const openConfirmed = incidents.filter(i => i.status === "at_large" && i.tier === "confirmed");
+  const openReportedRecent = incidents.filter(i => i.status === "at_large" && i.tier === "reported" && isRecent(i.dateStart));
+
+  const majorConfirmedOpen = openConfirmed.filter(i => i.severity === "major").length;
+
+  if(majorConfirmedOpen > 0) return {level:"severe", label:"SEVERE — MULTIPLE PRIMATES AT LARGE"};
+  if(openConfirmed.length > 0) return {level:"high", label:"HIGH — PRIMATE(S) CURRENTLY AT LARGE"};
+  if(openReportedRecent.length > 3) return {level:"elevated", label:"ELEVATED — UNVERIFIED SIGHTING CLUSTER"};
+  if(openReportedRecent.length > 0) return {level:"guarded", label:"GUARDED — ISOLATED REPORTS UNDER REVIEW"};
   return {level:"low", label:"LOW — NO PRIMATES CURRENTLY AT LARGE"};
 }
 
