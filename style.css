@@ -411,6 +411,34 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 .modal-note{font-size:11px;color:var(--text-dim);margin:0;}
 .modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:4px;}
 
+/* ---- Mobile ---- */
+@media (max-width:900px){
+  #map{height:420px;}
+  .incident-list{
+    max-height:none;
+    overflow-y:visible;
+  }
+}
+
+@media (max-width:480px){
+  .header-inner{padding:12px 16px;}
+  .brand h1{font-size:18px;}
+  .threat-meter{
+    min-width:0;
+    width:100%;
+    text-align:left;
+  }
+  .subbar-inner{padding:10px 16px;}
+  .spotlight-inner{padding:14px 16px;}
+  .spotlight-inner h2{font-size:18px;}
+  .layout{padding:12px;gap:12px;}
+  .map-panel, .sidebar{padding:12px;}
+  .scope-toggle{flex-direction:column;}
+  #map{height:340px;}
+  .disclaimer{padding:14px 16px;}
+  .modal{padding:16px;}
+}
+
 /* Leaflet popup styling override */
 .leaflet-popup-content-wrapper{
   background:var(--bg-panel);
