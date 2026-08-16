@@ -78,7 +78,7 @@ function renderMap(incidents){
       <h3>${escapeHtml(inc.title)}</h3>
       <p>${inc.city}, ${inc.state} — ${formatDateRange(inc)}</p>
       <p>${escapeHtml(inc.summary)}</p>
-      <p><strong>${(inc.tier||"").toUpperCase()}</strong> · ${(inc.status||"").replace("_"," ").toUpperCase()} · ${inc.count || 1} monkey(s)</p>
+      <p><strong>${(inc.tier||"").toUpperCase()}</strong> · ${CATEGORY_LABELS[inc.category] || "Escape"} · ${(inc.status||"").replace("_"," ").toUpperCase()} · ${inc.count || 1} monkey(s)</p>
       ${inc.sourceUrl ? `<p><a href="${inc.sourceUrl}" target="_blank" rel="noopener">Source: ${escapeHtml(inc.sourceName || "link")}</a></p>` : ""}
     `;
     marker.bindPopup(popupHtml);
@@ -105,7 +105,7 @@ function computeThreatLevel(incidents){
   const recentReported = incidents.filter(i => i.tier === "reported").length;
 
   if(activeMajor > 0) return {level:"severe", label:"SEVERE — MULTIPLE PRIMATES AT LARGE"};
-  if(activeAny > 0) return {level:"high", label:"HIGH — ACTIVE ESCAPE IN PROGRESS"};
+  if(activeAny > 0) return {level:"high", label:"HIGH — PRIMATE(S) CURRENTLY AT LARGE"};
   if(recentReported > 3) return {level:"elevated", label:"ELEVATED — UNVERIFIED SIGHTING CLUSTER"};
   if(recentReported > 0) return {level:"guarded", label:"GUARDED — ISOLATED REPORTS UNDER REVIEW"};
   return {level:"low", label:"LOW — NO PRIMATES CURRENTLY AT LARGE"};
@@ -122,17 +122,31 @@ function renderStatLine(incidents){
   const confirmed = incidents.filter(i => i.tier === "confirmed").length;
   const reported = incidents.filter(i => i.tier === "reported").length;
   const total = incidents.reduce((sum,i) => sum + (i.count||1), 0);
+  const years = allIncidents.map(i => i.dateStart.slice(0,4)).filter(Boolean).sort();
+  const earliest = years[0] || "2015";
   document.getElementById("statLine").textContent =
-    `Tracking ${confirmed} confirmed incident${confirmed===1?"":"s"} and ${reported} community report${reported===1?"":"s"} since 2023 · ${total} monkeys logged total`;
+    `Tracking ${confirmed} confirmed incident${confirmed===1?"":"s"} and ${reported} community report${reported===1?"":"s"} since ${earliest} · ${total} monkeys logged total`;
 }
+
+const TICKER_PX_PER_SEC = 45; // constant reading speed regardless of how much text is in the feed
 
 function renderTicker(incidents){
   const items = [...incidents]
     .sort((a,b) => new Date(b.dateStart) - new Date(a.dateStart))
-    .slice(0, 8)
-    .map(i => `${(i.tier||"").toUpperCase()}: ${i.title} — ${i.city}, ${i.state} (${i.dateStart})`);
+    .slice(0, 12)
+    .map(i => `${(i.category||"").toUpperCase() || (i.tier||"").toUpperCase()}: ${i.title} — ${i.city}, ${i.state} (${i.dateStart})`);
   const text = items.length ? items.join("     ///     ") : "NO INCIDENTS IN DATABASE";
-  document.getElementById("tickertapeTrack").textContent = "🐒 " + text + "     ///     🐒 " + text;
+  const track = document.getElementById("tickertapeTrack");
+  track.textContent = "🐒 " + text + "     ///     🐒 " + text;
+
+  // Recompute animation duration from actual rendered width so the scroll speed
+  // (px/sec) stays constant as the feed grows, instead of a fixed duration
+  // that gets unreadably fast once there are many incidents.
+  track.style.animation = "none";
+  const width = track.scrollWidth;
+  track.style.animation = "";
+  const duration = Math.max(30, width / TICKER_PX_PER_SEC);
+  track.style.animationDuration = duration + "s";
 }
 
 function populateFilters(incidents){
@@ -160,11 +174,24 @@ function populateFilters(incidents){
   });
 }
 
+const CATEGORY_LABELS = {
+  escape: "Escape",
+  attack: "Attack / Bite",
+  sighting: "Feral Sighting",
+  lab_incident: "Lab Incident",
+  trade_legal: "Trade / Legal"
+};
+
+function activeCategoryFilters(){
+  return [...document.querySelectorAll(".category-filter:checked")].map(el => el.value);
+}
+
 function applyFilters(){
   const year = document.getElementById("yearFilter").value;
   const month = document.getElementById("monthFilter").value;
   const showConfirmed = document.getElementById("showConfirmed").checked;
   const showReported = document.getElementById("showReported").checked;
+  const activeCategories = activeCategoryFilters();
 
   const filtered = allIncidents.filter(i => {
     const [iy, im] = i.dateStart.split("-");
@@ -172,6 +199,7 @@ function applyFilters(){
     if(month !== "all" && im !== month) return false;
     if(i.tier === "confirmed" && !showConfirmed) return false;
     if(i.tier === "reported" && !showReported) return false;
+    if(!activeCategories.includes(i.category || "escape")) return false;
     return true;
   });
 
@@ -195,6 +223,7 @@ function renderIncidentList(incidents){
     card.className = `incident-card tier-${inc.tier} severity-${inc.severity||"minor"}`;
     card.innerHTML = `
       <span class="badge ${inc.tier}">${(inc.tier||"").toUpperCase()}</span>
+      <span class="badge category-${inc.category||"escape"}">${CATEGORY_LABELS[inc.category] || "Escape"}</span>
       <span class="badge ${inc.status}">${(inc.status||"").replace("_"," ").toUpperCase()}</span>
       ${inc.severity === "major" ? '<span class="badge major">MAJOR</span>' : ""}
       <h3>${escapeHtml(inc.title)}</h3>
@@ -231,6 +260,7 @@ function wireReportForm(){
     const count = parseInt(document.getElementById("rCount").value, 10) || 1;
     const desc = document.getElementById("rDesc").value.trim();
     const name = document.getElementById("rName").value.trim() || "Anonymous";
+    const category = document.getElementById("rCategory").value;
 
     const coords = approxCoordsForState(state);
 
@@ -244,6 +274,7 @@ function wireReportForm(){
       lng: coords.lng + (Math.random()-0.5)*0.4,
       tier: "reported",
       status: "at_large",
+      category,
       count,
       severity: "minor",
       radiusKm: 15,
@@ -300,6 +331,7 @@ function approxCoordsForState(abbr){
   document.getElementById("monthFilter").addEventListener("change", applyFilters);
   document.getElementById("showConfirmed").addEventListener("change", applyFilters);
   document.getElementById("showReported").addEventListener("change", applyFilters);
+  document.querySelectorAll(".category-filter").forEach(el => el.addEventListener("change", applyFilters));
 
   renderThreatMeter(allIncidents);
   renderStatLine(allIncidents);

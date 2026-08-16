@@ -257,6 +257,14 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 .badge.major{background:var(--red-dim);color:#ffb3b0;}
 .badge.at_large{background:var(--red);color:#fff;}
 .badge.resolved{background:#20262f;color:var(--text-dim);}
+.badge.contained{background:#20262f;color:var(--blue);}
+.badge.monitoring{background:#20262f;color:var(--amber);}
+
+.badge.category-escape{background:#2a1a1a;color:#e0847f;}
+.badge.category-attack{background:#3a1616;color:#ff8f8a;}
+.badge.category-sighting{background:#16302a;color:#5fd1b8;}
+.badge.category-lab_incident{background:#2a2216;color:#e0c27f;}
+.badge.category-trade_legal{background:#1a1e30;color:#9fb3d9;}
 
 /* ---- Footer ---- */
 .disclaimer{

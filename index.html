@@ -55,13 +55,22 @@
     <div class="panel-title"><h2>FILTER LOG</h2></div>
     <div class="filters">
       <label>Year
-        <select id="yearFilter"><option value="all">All (2023–2026)</option></select>
+        <select id="yearFilter"><option value="all">All (2015–2026)</option></select>
       </label>
       <label>Month
         <select id="monthFilter"><option value="all">All months</option></select>
       </label>
       <label class="checkbox-row"><input type="checkbox" id="showConfirmed" checked> Show Confirmed</label>
       <label class="checkbox-row"><input type="checkbox" id="showReported" checked> Show Reported</label>
+    </div>
+
+    <div class="panel-title"><h2>CATEGORY</h2></div>
+    <div class="filters">
+      <label class="checkbox-row"><input type="checkbox" class="category-filter" value="escape" checked> Escape</label>
+      <label class="checkbox-row"><input type="checkbox" class="category-filter" value="attack" checked> Attack / Bite</label>
+      <label class="checkbox-row"><input type="checkbox" class="category-filter" value="sighting" checked> Feral Sighting</label>
+      <label class="checkbox-row"><input type="checkbox" class="category-filter" value="lab_incident" checked> Lab Incident</label>
+      <label class="checkbox-row"><input type="checkbox" class="category-filter" value="trade_legal" checked> Trade / Legal</label>
     </div>
 
     <div class="panel-title"><h2>INCIDENT LOG</h2></div>
@@ -92,6 +101,15 @@
       </label>
       <label>Number of monkeys observed
         <input type="number" id="rCount" min="1" value="1" required>
+      </label>
+      <label>Type of incident
+        <select id="rCategory">
+          <option value="escape">Escape (loose from captivity)</option>
+          <option value="attack">Attack / Bite</option>
+          <option value="sighting">Feral / Invasive Population Sighting</option>
+          <option value="lab_incident">Lab / Research Facility Incident</option>
+          <option value="trade_legal">Illegal Trade / Ownership</option>
+        </select>
       </label>
       <label>Description
         <textarea id="rDesc" rows="3" placeholder="What did you see? Be specific." required></textarea>
