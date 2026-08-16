@@ -128,13 +128,19 @@ function renderThreatMeter(incidents){
 }
 
 function renderStatLine(incidents){
+  const isCommunitySubmission = i => (i.id||"").startsWith("community-");
   const confirmed = incidents.filter(i => i.tier === "confirmed").length;
-  const reported = incidents.filter(i => i.tier === "reported").length;
+  const reportedNews = incidents.filter(i => i.tier === "reported" && !isCommunitySubmission(i)).length;
+  const communitySubmissions = incidents.filter(isCommunitySubmission).length;
   const total = incidents.reduce((sum,i) => sum + (i.count||1), 0);
   const years = allIncidents.map(i => i.dateStart.slice(0,4)).filter(Boolean).sort();
   const earliest = years[0] || "2015";
-  document.getElementById("statLine").textContent =
-    `Tracking ${confirmed} confirmed incident${confirmed===1?"":"s"} and ${reported} community report${reported===1?"":"s"} since ${earliest} · ${total} monkeys logged total`;
+
+  let line = `Tracking ${confirmed} confirmed incident${confirmed===1?"":"s"} and ${reportedNews} reported (unverified-sourcing) incident${reportedNews===1?"":"s"} since ${earliest} · ${total} monkeys logged total`;
+  if(communitySubmissions > 0){
+    line += ` · ${communitySubmissions} visitor-submitted report${communitySubmissions===1?"":"s"} (unverified)`;
+  }
+  document.getElementById("statLine").textContent = line;
 }
 
 const TICKER_PX_PER_SEC = 45; // constant reading speed regardless of how much text is in the feed
@@ -143,7 +149,7 @@ function renderTicker(incidents){
   const items = [...incidents]
     .sort((a,b) => new Date(b.dateStart) - new Date(a.dateStart))
     .slice(0, 12)
-    .map(i => `${(i.category||"").toUpperCase() || (i.tier||"").toUpperCase()}: ${i.title} — ${i.city}, ${i.state} (${i.dateStart})`);
+    .map(i => `${(CATEGORY_LABELS[i.category] || i.tier || "").toUpperCase()}: ${i.title} — ${i.city}, ${i.state} (${i.dateStart})`);
   const text = items.length ? items.join("     ///     ") : "NO INCIDENTS IN DATABASE";
   const track = document.getElementById("tickertapeTrack");
   track.textContent = "🐒 " + text + "     ///     🐒 " + text;
@@ -158,9 +164,48 @@ function renderTicker(incidents){
   track.style.animationDuration = duration + "s";
 }
 
+function pickSpotlight(incidents){
+  if(!incidents.length) return null;
+  const byRecency = (a,b) => new Date(b.dateStart) - new Date(a.dateStart);
+  const open = incidents.filter(i => i.status === "at_large").sort(byRecency);
+  if(open.length) return open[0];
+  const majors = incidents.filter(i => i.severity === "major").sort(byRecency);
+  if(majors.length) return majors[0];
+  return [...incidents].sort(byRecency)[0];
+}
+
+function renderSpotlight(incidents){
+  const inc = pickSpotlight(incidents);
+  const section = document.getElementById("spotlight");
+  if(!inc){
+    section.style.display = "none";
+    return;
+  }
+  section.style.display = "";
+  document.getElementById("spotlightTitle").textContent = inc.title;
+  document.getElementById("spotlightMeta").innerHTML = `
+    <span class="badge ${inc.tier}">${(inc.tier||"").toUpperCase()}</span>
+    <span class="badge category-${inc.category||"escape"}">${CATEGORY_LABELS[inc.category] || "Escape"}</span>
+    <span class="badge ${inc.status}">${(inc.status||"").replace("_"," ").toUpperCase()}</span>
+    <span>${inc.city}, ${inc.state} · ${formatDateRange(inc)}</span>
+  `;
+  document.getElementById("spotlightSummary").textContent = inc.summary;
+
+  const locateBtn = document.getElementById("spotlightLocate");
+  locateBtn.onclick = () => map.setView([inc.lat, inc.lng], 8);
+
+  const sourceLink = document.getElementById("spotlightSource");
+  if(inc.sourceUrl){
+    sourceLink.href = inc.sourceUrl;
+    sourceLink.style.display = "";
+  } else {
+    sourceLink.style.display = "none";
+  }
+}
+
 function populateFilters(incidents){
   const yearSel = document.getElementById("yearFilter");
-  const years = [...new Set(incidents.map(i => i.dateStart.slice(0,4)))].sort();
+  const years = [...new Set(incidents.map(i => i.dateStart.slice(0,4)))].sort().reverse();
   years.forEach(y => {
     const opt = document.createElement("option");
     opt.value = y; opt.textContent = y;
@@ -298,6 +343,7 @@ function wireReportForm(){
     applyFilters();
     renderThreatMeter(allIncidents);
     renderTicker(allIncidents);
+    renderSpotlight(allIncidents);
     form.reset();
     close();
   });
@@ -309,7 +355,9 @@ function populateYearOptionIfNeeded(year){
   if(!exists){
     const opt = document.createElement("option");
     opt.value = year; opt.textContent = year;
-    yearSel.appendChild(opt);
+    // Keep the list newest-first: insert before the first existing year option that's older.
+    const insertBefore = [...yearSel.options].find(o => o.value !== "all" && o.value < year);
+    yearSel.insertBefore(opt, insertBefore || null);
   }
 }
 
@@ -345,5 +393,6 @@ function approxCoordsForState(abbr){
   renderThreatMeter(allIncidents);
   renderStatLine(allIncidents);
   renderTicker(allIncidents);
+  renderSpotlight(allIncidents);
   applyFilters();
 })();

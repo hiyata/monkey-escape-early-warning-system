@@ -33,9 +33,25 @@
 <nav class="subbar">
   <div class="subbar-inner">
     <span id="statLine">Loading incident database…</span>
-    <button id="reportBtn" class="btn-alert">⚠ REPORT A SIGHTING</button>
+    <div class="subbar-actions">
+      <a class="btn-nav" href="stats.html">📊 STATISTICS</a>
+      <button id="reportBtn" class="btn-alert">⚠ REPORT A SIGHTING</button>
+    </div>
   </div>
 </nav>
+
+<section class="spotlight" id="spotlight" style="display:none;">
+  <div class="spotlight-inner">
+    <div class="spotlight-label">🔦 SPOTLIGHT STORY</div>
+    <h2 id="spotlightTitle"></h2>
+    <div class="spotlight-meta" id="spotlightMeta"></div>
+    <p id="spotlightSummary"></p>
+    <div class="spotlight-actions">
+      <button id="spotlightLocate" class="btn-secondary">Show on map</button>
+      <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source →</a>
+    </div>
+  </div>
+</section>
 
 <main class="layout">
 
