@@ -52,19 +52,6 @@
   </div>
 </nav>
 
-<section class="spotlight" id="spotlight" style="display:none;">
-  <div class="spotlight-inner">
-    <div class="spotlight-label">SPOTLIGHT STORY</div>
-    <h2 id="spotlightTitle"></h2>
-    <div class="spotlight-meta" id="spotlightMeta"></div>
-    <p id="spotlightSummary"></p>
-    <div class="spotlight-actions">
-      <button id="spotlightLocate" class="btn-secondary">Show on map</button>
-      <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source</a>
-    </div>
-  </div>
-</section>
-
 <main class="layout">
 
   <section class="map-panel">
@@ -84,6 +71,17 @@
   </section>
 
   <aside class="sidebar">
+    <div class="spotlight-card" id="spotlight" hidden>
+      <div class="spotlight-label">SPOTLIGHT STORY</div>
+      <h3 id="spotlightTitle"></h3>
+      <div class="spotlight-meta" id="spotlightMeta"></div>
+      <p id="spotlightSummary"></p>
+      <div class="spotlight-actions">
+        <button id="spotlightLocate" class="btn-secondary">Show on map</button>
+        <a id="spotlightSource" href="#" target="_blank" rel="noopener" class="btn-secondary" style="display:none;">Read source</a>
+      </div>
+    </div>
+
     <div class="panel-title"><h2>FILTER LOG</h2></div>
     <div class="filters">
       <label>Year
@@ -112,7 +110,7 @@
 </main>
 
 <footer class="disclaimer">
-  <p>M.E.E.W.S. is an independent, crowd-sourced tracker compiled from public news reporting. Not affiliated with any government agency, zoo, or research institution. Confirmed entries link their source; reported entries are unverified. If you encounter a loose animal, do not approach it — contact local animal control.</p>
+  <p>M.E.E.W.S. is an independent, crowd-sourced tracker compiled from public news reporting. Not affiliated with any government agency, zoo, or research institution. Confirmed entries link their source; reported entries are unverified. If you encounter a loose animal, do not approach it. Contact local animal control.</p>
 </footer>
 
 <div class="modal-backdrop" id="reportModalBackdrop">

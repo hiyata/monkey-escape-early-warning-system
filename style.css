@@ -128,44 +128,45 @@ body{min-height:100vh;display:flex;flex-direction:column;}
 }
 .btn-nav:hover{color:#fff;border-color:var(--text-dim);}
 
-.spotlight{
+.spotlight-card{
   background:linear-gradient(180deg,#1a1210,#12151a);
-  border-bottom:1px solid var(--red-dim);
-}
-.spotlight-inner{
-  max-width:1300px;
-  margin:0 auto;
-  padding:18px 20px;
+  border:1px solid var(--red-dim);
+  border-radius:6px;
+  padding:14px;
+  margin-bottom:16px;
 }
 .spotlight-label{
   font-family:"Courier New", monospace;
-  font-size:11px;
-  letter-spacing:2px;
+  font-size:10px;
+  letter-spacing:1.5px;
   color:var(--amber);
   margin-bottom:6px;
 }
-.spotlight-inner h2{
+.spotlight-card h3{
   margin:0 0 6px;
-  font-size:22px;
+  font-size:15px;
   color:#fff;
 }
 .spotlight-meta{
-  font-size:12px;
+  font-size:11px;
   color:var(--text-dim);
-  margin-bottom:10px;
+  margin-bottom:8px;
   display:flex;
-  gap:8px;
+  gap:6px;
   flex-wrap:wrap;
   align-items:center;
 }
-.spotlight-inner p{
-  margin:0 0 14px;
+.spotlight-card p{
+  margin:0 0 12px;
   color:var(--text);
-  font-size:14px;
+  font-size:12px;
   line-height:1.5;
-  max-width:800px;
 }
-.spotlight-actions{display:flex;gap:10px;}
+.spotlight-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.spotlight-actions button, .spotlight-actions a{
+  font-size:11px;
+  padding:6px 10px;
+}
 .spotlight-actions a.btn-secondary{text-decoration:none;display:inline-block;}
 
 .btn-alert{

@@ -186,10 +186,10 @@ function renderSpotlight(incidents){
   const inc = pickSpotlight(incidents);
   const section = document.getElementById("spotlight");
   if(!inc){
-    section.style.display = "none";
+    section.hidden = true;
     return;
   }
-  section.style.display = "";
+  section.hidden = false;
   document.getElementById("spotlightTitle").textContent = inc.title;
   document.getElementById("spotlightMeta").innerHTML = `
     <span class="badge ${inc.tier}">${(inc.tier||"").toUpperCase()}</span>
