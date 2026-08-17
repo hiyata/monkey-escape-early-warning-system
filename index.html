@@ -62,9 +62,14 @@
     <div class="panel-title">
       <h2 id="mapTitle">INCIDENT MAP</h2>
       <div class="legend">
-        <span class="legend-item"><i class="dot confirmed-atlarge"></i> Confirmed — At Large</span>
-        <span class="legend-item"><i class="dot confirmed-resolved"></i> Confirmed — Resolved</span>
-        <span class="legend-item"><i class="dot reported"></i> Reported — Unverified</span>
+        <span class="legend-group-label">Status:</span>
+        <span class="legend-item"><i class="dot status-atlarge"></i> At Large</span>
+        <span class="legend-item"><i class="dot status-monitoring"></i> Monitoring</span>
+        <span class="legend-item"><i class="dot status-contained"></i> Contained</span>
+        <span class="legend-item"><i class="dot status-resolved"></i> Resolved</span>
+        <span class="legend-group-label">Sourcing:</span>
+        <span class="legend-item"><i class="ring ring-confirmed"></i> Confirmed</span>
+        <span class="legend-item"><i class="ring ring-reported"></i> Reported / Unverified</span>
       </div>
     </div>
     <div id="map"></div>

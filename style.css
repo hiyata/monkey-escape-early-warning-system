@@ -264,12 +264,17 @@ body{min-height:100vh;display:flex;flex-direction:column;}
   border:1px solid var(--border);
 }
 
-.legend{display:flex;gap:14px;flex-wrap:wrap;}
+.legend{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.legend-group-label{font-size:10px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.5px;}
 .legend-item{font-size:11px;color:var(--text-dim);display:flex;align-items:center;gap:5px;}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
-.dot.confirmed-atlarge{background:var(--red);box-shadow:0 0 6px var(--red);}
-.dot.confirmed-resolved{background:var(--text-dim);}
-.dot.reported{background:var(--amber);}
+.dot.status-atlarge{background:var(--red);box-shadow:0 0 6px var(--red);}
+.dot.status-monitoring{background:var(--amber);}
+.dot.status-contained{background:var(--blue);}
+.dot.status-resolved{background:var(--text-dim);}
+.ring{width:10px;height:10px;border-radius:50%;display:inline-block;background:transparent;box-sizing:border-box;}
+.ring-confirmed{border:2px solid #fff;}
+.ring-reported{border:2px dashed var(--amber);}
 
 /* ---- Sidebar ---- */
 .sidebar{

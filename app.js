@@ -47,10 +47,16 @@ function initMap(){
   markerLayer = L.layerGroup().addTo(map);
 }
 
+// Color encodes STATUS (is it currently a live situation) — this must never be
+// hidden by tier. Sourcing confidence (confirmed vs reported) is a separate axis,
+// shown via border style (solid vs dashed), not by swapping the color.
 function colorFor(incident){
-  if(incident.tier === "reported") return "#e0a52f";
-  if(incident.status === "at_large") return "#e0332f";
-  return "#8891a0";
+  switch(incident.status){
+    case "at_large": return "#e0332f";   // red — currently loose, most urgent
+    case "monitoring": return "#e0a52f"; // amber — known ongoing feral situation
+    case "contained": return "#3f8ae0";  // blue — located but not yet fully resolved
+    default: return "#8891a0";           // gray — resolved
+  }
 }
 
 function renderMap(incidents){
@@ -68,8 +74,8 @@ function renderMap(incidents){
 
     const marker = L.circleMarker([inc.lat, inc.lng], {
       radius: 6,
-      color: "#fff",
-      weight: 1,
+      color: inc.tier === "reported" ? "#e0a52f" : "#fff", // ring color flags sourcing confidence, independent of the status-driven fill
+      weight: inc.tier === "reported" ? 2 : 1,
       fillColor: color,
       fillOpacity: 1
     }).addTo(markerLayer);
@@ -78,7 +84,7 @@ function renderMap(incidents){
       <h3>${escapeHtml(inc.title)}</h3>
       <p>${escapeHtml(locationLabel(inc))} — ${formatDateRange(inc)}</p>
       <p>${escapeHtml(inc.summary)}</p>
-      <p><strong>${(inc.tier||"").toUpperCase()}</strong> · ${CATEGORY_LABELS[inc.category] || "Escape"} · ${(inc.status||"").replace("_"," ").toUpperCase()} · ${inc.count || 1} monkey(s)</p>
+      <p><strong>${(inc.status||"").replace("_"," ").toUpperCase()}</strong> (${(inc.tier||"").toUpperCase()}) · ${CATEGORY_LABELS[inc.category] || "Escape"} · ${inc.count || 1} monkey(s)</p>
       ${inc.sourceUrl ? `<p><a href="${inc.sourceUrl}" target="_blank" rel="noopener">Source: ${escapeHtml(inc.sourceName || "link")}</a></p>` : ""}
     `;
     marker.bindPopup(popupHtml);
