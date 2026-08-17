@@ -206,7 +206,7 @@ function renderSpotlight(incidents){
   document.getElementById("spotlightSummary").textContent = inc.summary;
 
   const locateBtn = document.getElementById("spotlightLocate");
-  locateBtn.onclick = () => map.setView([inc.lat, inc.lng], 8);
+  locateBtn.onclick = () => focusIncidentOnMap(inc);
 
   const sourceLink = document.getElementById("spotlightSource");
   if(inc.sourceUrl){
@@ -290,6 +290,17 @@ function setRegionScope(scope){
   applyFilters();
 }
 
+// Jump the map to an incident, switching to the International scope first if
+// needed (US-only -> click an international incident) so it's actually visible.
+// Never switches the other direction: International already includes US, so
+// clicking a US incident while viewing International should not narrow the scope.
+function focusIncidentOnMap(inc){
+  if(regionScope === "us" && !isUS(inc)){
+    setRegionScope("all");
+  }
+  map.setView([inc.lat, inc.lng], 8);
+}
+
 const INCIDENT_PAGE_SIZE = 12;
 let incidentListPage = 1;
 
@@ -318,7 +329,7 @@ function renderIncidentList(incidents){
       <div class="meta">${escapeHtml(inc.summary)}</div>
     `;
     card.addEventListener("click", () => {
-      map.setView([inc.lat, inc.lng], 8);
+      focusIncidentOnMap(inc);
     });
     list.appendChild(card);
   });
