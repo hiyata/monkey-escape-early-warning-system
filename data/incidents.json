@@ -1678,5 +1678,25 @@
     "summary": "A capuchin monkey that had been circulating through the Promorar neighborhood of Teresina, Piaui, Brazil for several days, entering homes, was captured unharmed by the city's Municipal Civil Guard environmental protection unit and sent to a federal wildlife triage center for evaluation. Translated from Portuguese-language reporting.",
     "sourceName": "Portal Clube News",
     "sourceUrl": "https://portalclubenews.com/2026/08/18/macaco-prego-e-resgatado-apos-invadir-casas-em-teresina-veja-video/"
+  },
+  {
+    "id": "2026-id-solo-safari-orangutan-escape",
+    "title": "Orangutan \"Didi\" Escapes Solo Safari Zoo Enclosure in Indonesia",
+    "dateStart": "2026-08-18",
+    "dateEnd": "2026-08-18",
+    "city": "Surakarta (Solo)",
+    "state": "",
+    "country": "ID",
+    "lat": -7.5755,
+    "lng": 110.8243,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "escape",
+    "count": 1,
+    "severity": "moderate",
+    "radiusKm": 5,
+    "summary": "Didi, a male orangutan at Solo Safari zoo in Surakarta, Central Java, pulled loose an electric deterrent cable and defeated all four layers of his enclosure's containment. He wandered into a nearby neighborhood near Universitas Sebelas Maret, entering a food stall and knocking over parked motorcycles, before zoo staff tranquilized and recovered him roughly 40 minutes later. No injuries were reported and zoo management publicly apologized, announcing a security review of the enclosure. Translated from Indonesian-language reporting.",
+    "sourceName": "Kompas",
+    "sourceUrl": "https://regional.kompas.com/read/2026/08/18/205002578/orangutan-lepas-ke-rumah-makan-dan-kos-manajemen-solo-safari-minta-maaf"
   }
 ]
