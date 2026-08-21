@@ -1698,5 +1698,25 @@
     "summary": "Didi, a male orangutan at Solo Safari zoo in Surakarta, Central Java, pulled loose an electric deterrent cable and defeated all four layers of his enclosure's containment. He wandered into a nearby neighborhood near Universitas Sebelas Maret, entering a food stall and knocking over parked motorcycles, before zoo staff tranquilized and recovered him roughly 40 minutes later. No injuries were reported and zoo management publicly apologized, announcing a security review of the enclosure. Translated from Indonesian-language reporting.",
     "sourceName": "Kompas",
     "sourceUrl": "https://regional.kompas.com/read/2026/08/18/205002578/orangutan-lepas-ke-rumah-makan-dan-kos-manajemen-solo-safari-minta-maaf"
+  },
+  {
+    "id": "2026-in-moradabad-mora-ki-milak-attacks",
+    "title": "Monkey Troop Injures More Than a Dozen Residents Over Three Weeks in Moradabad, India",
+    "dateStart": "2026-07-30",
+    "dateEnd": "2026-08-17",
+    "city": "Moradabad",
+    "state": "",
+    "country": "IN",
+    "lat": 28.8386,
+    "lng": 78.7733,
+    "tier": "reported",
+    "status": "monitoring",
+    "category": "attack",
+    "count": 96,
+    "severity": "major",
+    "radiusKm": 10,
+    "summary": "A monkey troop repeatedly attacked residents of the Mora Ki Milak area of Moradabad, Uttar Pradesh, India, and neighboring localities over roughly three weeks, injuring at least 16 people -- including a child who suffered a fractured hand and another bitten on the heel -- by mid-August. District Magistrate Rajendra Painsiya formed a special task force with anti-rabies vaccine response, and a rescue operation trapped 96 monkeys across the area for relocation, but a man was still bitten on both hands by a monkey that entered his home while he slept on August 17, indicating the problem was not fully resolved. Translated from Hindi-language reporting; exact species not specified in coverage.",
+    "sourceName": "Amar Ujala",
+    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/moradabad/a-monkey-entered-the-house-while-the-young-man-was-asleep-it-bit-both-his-hands-and-fled-moradabad-news-c-15-1-mbd1044-971604-2026-08-17"
   }
 ]
