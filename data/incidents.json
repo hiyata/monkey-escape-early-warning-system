@@ -1898,5 +1898,25 @@
     "summary": "A solitary Japanese macaque, first spotted August 7 in Kobe's Nishi ward, was sighted again on August 20 in the Satoyama-cho area of Hyogo ward, having apparently roamed across a wide swath of the city -- unusual since Kobe is not typical macaque troop territory. City authorities issued an advisory asking residents not to feed or approach the animal. Translated from Japanese-language reporting.",
     "sourceName": "Kobe City (official advisory)",
     "sourceUrl": "https://www.city.kobe.lg.jp/a99375/shise/kekaku/kezaikankokyoku/yugaichoju/monkey.html"
+  },
+  {
+    "id": "2026-pe-jaen-capuchin-seizure",
+    "title": "Illegal Wildlife Park Raided in Jaen, Peru, Capuchin Monkey Among Animals Rescued",
+    "dateStart": "2026-08-22",
+    "dateEnd": "2026-08-22",
+    "city": "Jaen",
+    "state": "",
+    "country": "PE",
+    "lat": -5.7089,
+    "lng": -78.8081,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "trade_legal",
+    "count": 1,
+    "severity": "moderate",
+    "radiusKm": 10,
+    "summary": "Peru's forestry and wildlife service Serfor, the environmental prosecutor's office, and National Police raided an unauthorized recreational park called Manantial de Vida in the Shumba Alto sector of Jaen district, Cajamarca region, finding a white-fronted capuchin monkey held in filthy, unauthorized conditions alongside an ocelot, a caiman, and tortoises. The animals were confiscated for rehabilitation. Translated from Spanish-language reporting.",
+    "sourceName": "Infobae Peru",
+    "sourceUrl": "https://www.infobae.com/peru/2026/08/22/jaen-serfor-rescata-tigrillo-caiman-mono-y-tortugas-del-recreo-manantial-de-vida/"
   }
 ]
