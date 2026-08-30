@@ -1843,21 +1843,21 @@
     "id": "2026-in-lakhimpur-kheri-langur-attack",
     "title": "Langur Bites Same Man Twice Within a Week in Lakhimpur Kheri, India",
     "dateStart": "2026-08-16",
-    "dateEnd": "2026-08-22",
+    "dateEnd": "2026-08-26",
     "city": "Lakhimpur Kheri",
     "state": "",
     "country": "IN",
     "lat": 27.9469,
     "lng": 80.7778,
     "tier": "reported",
-    "status": "at_large",
+    "status": "resolved",
     "category": "attack",
     "count": 1,
     "severity": "moderate",
     "radiusKm": 8,
-    "summary": "A langur -- a leaf-eating monkey species distinct from the region's more common rhesus macaques -- bit a 25-year-old man on the head while he rode a motorbike near Lakhimpur Kheri, Uttar Pradesh, India, then bit him again near the eye a week later as he fled into a sugarcane field, requiring stitches. The animal remained loose in the area as of the second attack. Translated from Hindi-language reporting; single-source account.",
+    "summary": "A langur -- a leaf-eating monkey species distinct from the region's more common rhesus macaques -- bit a 25-year-old man on the head while he rode a motorbike near Lakhimpur Kheri, Uttar Pradesh, India, then bit him again near the eye a week later as he fled into a sugarcane field, requiring stitches. The Forest Department subsequently caught the langur, which had been causing disturbances in the district for three days, on August 26. Translated from Hindi-language reporting; single-source account.",
     "sourceName": "Amar Ujala",
-    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/lakhimpur-kheri/the-monkey-bit-the-young-man-twice-in-seven-days-lakhimpur-news-c-120-1-lkh1011-183161-2026-08-23"
+    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/lakhimpur-kheri/the-forest-department-caught-the-monkey-that-had-been-causing-havoc-for-three-days-lakhimpur-news-c-120-1-lkh1002-183337-2026-08-26"
   },
   {
     "id": "2026-vn-phutho-primate-trafficking",
@@ -2118,5 +2118,25 @@
     "summary": "A joint Mexican Navy, federal prosecutor, and public security operation targeting fuel theft ('huachicol') across five properties in Tampico and Altamira, Tamaulipas, uncovered a ranch operating as an unauthorized private zoo holding 135 exotic animals, including 21 endangered Mexican spider monkeys alongside tigers, jaguars, a liger, hyenas, lions, bison, and a camel. Mexico's environmental enforcement agency Profepa took custody of the animals for assessment. Translated from Spanish-language reporting, corroborated by multiple independent Mexican outlets.",
     "sourceName": "Infobae Mexico",
     "sourceUrl": "https://www.infobae.com/mexico/2026/08/27/megaoperativo-contra-huachicol-destapa-rancho-con-135-animales-exoticos-en-tamaulipas-les-arrebatan-hienas-tigres-y-un-camello/"
+  },
+  {
+    "id": "2026-in-budaun-monkey-bite-death",
+    "title": "Woman Dies After Monkey Bite in Budaun, India",
+    "dateStart": "2026-08-28",
+    "dateEnd": "2026-08-28",
+    "city": "Budaun",
+    "state": "",
+    "country": "IN",
+    "lat": 28.0333,
+    "lng": 79.1167,
+    "tier": "reported",
+    "status": "monitoring",
+    "category": "attack",
+    "count": 1,
+    "severity": "major",
+    "radiusKm": 8,
+    "summary": "A woman died after being bitten by a monkey in Budaun district, Uttar Pradesh, India, sparking panic in her village, according to local reporting. The exact circumstances of the bite and the animal's fate were not specified in initial coverage. Translated from Hindi-language reporting; single-source account.",
+    "sourceName": "Amar Ujala",
+    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/budaun/woman-dies-after-being-bitten-by-a-monkey-panic-grips-village-badaun-news-c-123-1-sbly1006-171733-2026-08-28"
   }
 ]
