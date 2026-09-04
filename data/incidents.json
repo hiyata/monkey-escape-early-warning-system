@@ -2578,5 +2578,25 @@
     "summary": "Residents of Pakbada, a locality in Moradabad district, Uttar Pradesh, India, reported an ongoing monkey menace causing panic in the area, a separate report from the larger Mora Ki Milak monkey-attack response covered elsewhere in this district. Troop size is an approximate estimate. Translated from Hindi-language reporting; single-source account.",
     "sourceName": "Amar Ujala",
     "sourceUrl": "https://www.amarujala.com/uttar-pradesh/moradabad/monkey-menace-in-pakbada-residents-in-a-state-of-panic-moradabad-news-c-281-1-smbd1012-101180-2026-09-02"
+  },
+  {
+    "id": "2026-sy-salqin-monkey-attack",
+    "title": "Escaped Monkeys Bite Three Residents in Salqin, Syria",
+    "dateStart": "2026-09-02",
+    "dateEnd": "2026-09-02",
+    "city": "Salqin",
+    "state": "",
+    "country": "SY",
+    "lat": 36.1058,
+    "lng": 36.4869,
+    "tier": "confirmed",
+    "status": "at_large",
+    "category": "attack",
+    "count": 3,
+    "severity": "moderate",
+    "radiusKm": 8,
+    "summary": "Three escaped monkeys bit three residents in the city of Salqin in Syria's western Idlib countryside, sending the injured to Salqin Central Hospital and prompting some bystanders to flee as videos of the animals running through the streets circulated on social media. Capture efforts were underway as of the report; it was the second such escape reported in Salqin in recent months, after a group of monkeys broke out of a local amusement park in June and roamed the Qusour neighborhood before being located.",
+    "sourceName": "Arab News / Gulf News",
+    "sourceUrl": "https://www.arabnews.com/middle-east/escaped-monkeys-bite-3-people-in-syrias-idlib-countryside-3000382"
   }
 ]
