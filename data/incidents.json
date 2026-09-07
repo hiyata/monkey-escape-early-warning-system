@@ -1721,9 +1721,9 @@
   },
   {
     "id": "2026-in-shrinagar-pauri-dhari-devi-monkey-attacks",
-    "title": "Recurring Monkey Attacks at Dhari Devi Temple, Uttarakhand, India",
+    "title": "Recurring Monkey Attacks Spread Across Shrinagar, Uttarakhand, India",
     "dateStart": "2026-08-09",
-    "dateEnd": "2026-08-20",
+    "dateEnd": "2026-09-06",
     "city": "Shrinagar (Pauri Garhwal)",
     "state": "",
     "country": "IN",
@@ -1735,9 +1735,9 @@
     "count": 5,
     "severity": "moderate",
     "radiusKm": 10,
-    "summary": "A troop of monkeys repeatedly attacked pilgrims, temple staff, and residents at the Maa Dhari Devi Temple in Shrinagar, Pauri Garhwal district, Uttarakhand, India, through August 2026, injuring at least four people over one four-day span in mid-August alone, including a child, a visiting girl, and temple workers, and snatching belongings from devotees. Troop size is an approximate estimate. The temple committee asked the forest department to install capture cages on the premises. Translated from Hindi-language reporting; single-source account.",
+    "summary": "A troop of monkeys repeatedly attacked pilgrims, temple staff, and residents at the Maa Dhari Devi Temple in Shrinagar, Pauri Garhwal district, Uttarakhand, India, through August 2026, injuring at least four people over one four-day span in mid-August alone, including a child, a visiting girl, and temple workers, and snatching belongings from devotees. By early September the menace had spread beyond the temple to residential lanes across the city -- including Gurudwara Road, Nageshwar Lane, Kamleshwar, Nursery Road, Banswada, and areas near the GIC/GGIC schools -- with monkeys damaging rooftop plants, opening water tank lids, and stealing food from homes. Troop size is an approximate estimate. The temple committee asked the forest department to install capture cages on the premises. Translated from Hindi-language reporting; single-source account.",
     "sourceName": "Amar Ujala",
-    "sourceUrl": "https://www.amarujala.com/uttarakhand/pauri/four-people-injured-in-monkey-attacks-over-four-days-shrinagar-news-c-53-1-sdrn1039-125445-2026-08-20"
+    "sourceUrl": "https://www.amarujala.com/uttarakhand/pauri/people-troubled-by-monkeys-shrinagar-news-c-53-1-sdrn1039-125969-2026-09-06"
   },
   {
     "id": "2026-tn-shelby-county-marmoset-escape",
@@ -2621,7 +2621,7 @@
   },
   {
     "id": "2026-vn-vungtau-macaque-attack-sep",
-    "title": "Wild Pig-Tailed Macaque Injures Resident in Vung Tau, Vietnam",
+    "title": "Wild Pig-Tailed Macaque Injures Resident in Vung Tau, Vietnam, Then Captured",
     "dateStart": "2026-09-04",
     "dateEnd": "2026-09-04",
     "city": "Vung Tau",
@@ -2629,15 +2629,15 @@
     "country": "VN",
     "lat": 10.346,
     "lng": 107.0843,
-    "tier": "reported",
-    "status": "at_large",
+    "tier": "confirmed",
+    "status": "resolved",
     "category": "attack",
     "count": 1,
     "severity": "moderate",
     "radiusKm": 8,
-    "summary": "An adult wild pig-tailed macaque entered a residential area near Lon Mountain in Vung Tau, Vietnam, and attacked a resident, who suffered a bleeding injury. Police and forest rangers searched for the animal but the operation to capture it was unsuccessful, and it remained at large. The area saw a similar spate of macaque attacks in late January 2026 that ended when authorities captured several aggressive monkeys. Translated from Vietnamese-language reporting.",
-    "sourceName": "DTiNews / Tuoi Tre",
-    "sourceUrl": "https://dtinews.dantri.com.vn/vietnam-today/wild-monkey-injures-resident-in-vung-tau-20260904171356986.htm"
+    "summary": "An adult wild pig-tailed macaque entered a home on Vi Ba road, near Lon Mountain in Vung Tau ward (now part of Ho Chi Minh City following Vietnam's administrative merger), and attacked a resident, who suffered a bleeding injury and significant blood loss. Local authorities captured the adult monkey the same afternoon. The area saw a similar spate of macaque attacks in late January 2026 that ended when authorities captured several aggressive monkeys. Translated from Vietnamese-language reporting; corroborated by two independent outlets.",
+    "sourceName": "Tuoi Tre / DTiNews",
+    "sourceUrl": "https://tuoitre.vn/khi-hoang-hung-han-vao-nha-dan-o-vung-tau-can-nguoi-da-bi-bat-100260904194851647.htm"
   },
   {
     "id": "2026-mx-nuevaitalia-spider-monkey-seizure",
@@ -2718,6 +2718,26 @@
     "lat": -12.0219,
     "lng": -76.9989,
     "radiusKm": 10
+  },
+  {
+    "id": "2026-in-bareilly-rickshaw-driver-attack",
+    "title": "Monkey Troop Attacks Rickshaw Driver Who Tried to Help Injured Baby Monkey in Bareilly, India",
+    "dateStart": "2026-09-06",
+    "dateEnd": "2026-09-06",
+    "city": "Bareilly",
+    "state": "",
+    "country": "IN",
+    "lat": 28.3670,
+    "lng": 79.4304,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "attack",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 8,
+    "summary": "A 45-year-old rickshaw puller named Sharafat was bitten on the heel by a troop of monkeys in the Subhashnagar police station area of Bareilly, Uttar Pradesh, India, after he stopped to help an injured baby monkey lying in the road. A temple priest assisted him and he was taken to the district hospital for treatment. Translated from Hindi-language reporting; single-source account.",
+    "sourceName": "Amar Ujala",
+    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/bareilly/injured-monkey-rescued-troop-attacks-rickshaw-driver-bareilly-news-c-4-bly1015-961184-2026-09-06"
   },
   {
     "id": "2026-br-rio-santa-teresa-capuchin-chained",
