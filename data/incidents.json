@@ -3118,5 +3118,25 @@
     "summary": "A capuchin monkey ('macaco-prego') was repeatedly sighted over several days moving through multiple neighborhoods of western and central Sao Paulo, Brazil, including Bras, Lapa, Perdizes, and Agua Branca, drawing attention on social media. The Municipal Civil Guard's wildlife unit (GCM Ambiental) captured the animal on September 11, 2026, and it is being evaluated at an animal management center for possible release back into the wild. Translated from Portuguese-language reporting; single local news network's coverage.",
     "sourceName": "A Guardia da Noticia",
     "sourceUrl": "https://aguardiadanoticia.com.br/macaco-prego-e-visto-circulando-por-diferentes-bairros-de-sao-paulo/"
+  },
+  {
+    "id": "2026-tx-league-city-capuchin-bite",
+    "title": "Pet Capuchin Monkey Bites Child During Store Show-and-Tell in League City, Texas",
+    "dateStart": "2026-09-05",
+    "dateEnd": "2026-09-05",
+    "city": "League City",
+    "state": "TX",
+    "country": "US",
+    "lat": 29.5075,
+    "lng": -95.0949,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "attack",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 8,
+    "summary": "A pet capuchin monkey named Cody, owned by Robert Williams and kept at Ms. Monkey's Emporium on FM 2094 in League City, Texas, bit a 4-year-old boy during a show-and-tell event, breaking the skin and leaving bruising. Accounts conflict: the owner says the boy pulled the monkey's tail, while the boy's mother says the monkey jumped off the owner and ran at her son unprovoked. League City animal control suspended Williams's exhibitor license, placed Cody under a 21-day quarantine, and barred his two other monkeys from public contact pending review.",
+    "sourceName": "ABC13 Houston / ABC7 Chicago / ABC11 / Click2Houston",
+    "sourceUrl": "https://abc13.com/monkey-bite-league-city-store-quarantine/989973/"
   }
 ]
