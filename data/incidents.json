@@ -2915,7 +2915,7 @@
     "count": 5,
     "severity": "major",
     "radiusKm": 15,
-    "summary": "Villagers in the Bhograi area of Balasore district, Odisha, India, spotted five juvenile orangutans -- three males and two females, all under a year old -- in a casuarina plantation near the Udayapur-Talsari border, initially mistaking them for monkeys. Orangutans are not native to India, so forest officials suspect the animals were abandoned mid-transit by an international wildlife-smuggling operation using Odisha as a transit route. All five were moved to Nandankanan Zoological Park for quarantine while the Wildlife Crime Control Bureau investigates and officials examine CITES repatriation options.",
+    "summary": "Villagers in the Bhograi area of Balasore district, Odisha, India, spotted five juvenile orangutans -- three males and two females, all under a year old -- in a casuarina plantation near the Udayapur-Talsari border, initially mistaking them for monkeys. Orangutans are not native to India, so forest officials suspect the animals were abandoned mid-transit by an international wildlife-smuggling operation using Odisha as a transit route. All five were moved to Nandankanan Zoological Park for quarantine; by September 11-12, Odisha's Special Task Force had questioned three suspects in West Bengal and was tracing a black SUV believed to have transported the animals, Chief Minister Mohan Charan Majhi ordered a full probe, and Indonesia's forestry ministry said it suspects Sumatran origin and is seeking repatriation pending DNA testing.",
     "sourceName": "Down To Earth",
     "sourceUrl": "https://www.downtoearth.org.in/wildlife-biodiversity/rescued-orangutans-in-odisha-likely-spent-time-with-humans-officials-say"
   },
@@ -3138,5 +3138,25 @@
     "summary": "A pet capuchin monkey named Cody, owned by Robert Williams and kept at Ms. Monkey's Emporium on FM 2094 in League City, Texas, bit a 4-year-old boy during a show-and-tell event, breaking the skin and leaving bruising. Accounts conflict: the owner says the boy pulled the monkey's tail, while the boy's mother says the monkey jumped off the owner and ran at her son unprovoked. League City animal control suspended Williams's exhibitor license, placed Cody under a 21-day quarantine, and barred his two other monkeys from public contact pending review.",
     "sourceName": "ABC13 Houston / ABC7 Chicago / ABC11 / Click2Houston",
     "sourceUrl": "https://abc13.com/monkey-bite-league-city-store-quarantine/989973/"
+  },
+  {
+    "id": "2026-jp-matsue-library-macaque-sighting",
+    "title": "Wild Macaque Sighted on Grounds of Matsue City Library, Japan",
+    "dateStart": "2026-09-10",
+    "dateEnd": "2026-09-10",
+    "city": "Matsue",
+    "state": "",
+    "country": "JP",
+    "lat": 35.4723,
+    "lng": 133.0505,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "sighting",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 5,
+    "summary": "A single wild Japanese macaque was spotted on the grounds of the Matsue City Library complex (Sanbiru Culture Center/Plabo Hall) in Shimane Prefecture, Japan, on the evening of September 10, 2026. The city library issued a routine public safety notice advising people not to approach, make eye contact with, or feed the animal; no injuries were reported and the monkey moved on from the area. Translated from Japanese-language reporting; single local source.",
+    "sourceName": "Matsue City Library",
+    "sourceUrl": "https://www.lib-citymatsue.jp/?p=27216"
   }
 ]
