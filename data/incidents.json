@@ -3298,5 +3298,25 @@
     "summary": "Quarantine officers at Juanda International Airport in Surabaya used X-ray screening to detect a live animal hidden in a passenger's luggage, finding a long-tailed macaque concealed in a plastic-wrapped box disguised with old food packaging and bound for Bulukumba, South Sulawesi. The suspect fled and was pursued by police; the macaque was handed to the East Java Quarantine Agency for health screening, including rabies testing. Translated from Indonesian-language reporting.",
     "sourceName": "ANTARA News Jawa Timur",
     "sourceUrl": "https://jatim.antaranews.com/berita/1098901/bkhit-jatim-gagalkan-pengiriman-satwa-tanpa-dokumen-karantina-via-juanda"
+  },
+  {
+    "id": "2026-in-delhi-zoo-macaque-escape-attack",
+    "title": "Bonnet Macaque Escapes Enclosure at Delhi Zoo, Mauls Caretaker and Visitor",
+    "dateStart": "2026-09-14",
+    "dateEnd": "2026-09-15",
+    "city": "New Delhi",
+    "state": "",
+    "country": "IN",
+    "lat": 28.6122,
+    "lng": 77.2427,
+    "tier": "confirmed",
+    "status": "contained",
+    "category": "escape",
+    "count": 1,
+    "severity": "moderate",
+    "radiusKm": 3,
+    "summary": "A bonnet macaque got out of its enclosure at the National Zoological Park (Delhi Zoo) on Sunday night after a gate was allegedly left improperly secured, entering the staff and caretaker gallery. On Monday morning the monkey mauled a caretaker, severing part of a finger and biting both his legs, and also injured a visitor; the same animal reportedly attacked a different staff member in December 2025. Corroborated by multiple Indian outlets including English and Hindi-language coverage.",
+    "sourceName": "Millennium Post",
+    "sourceUrl": "https://www.millenniumpost.in/delhi/delhi-zoo-monkey-attack-leaves-caretaker-with-severed-finger-bites-visitor-also-hurt-676182"
   }
 ]
