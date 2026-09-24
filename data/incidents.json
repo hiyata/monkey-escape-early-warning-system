@@ -3838,5 +3838,25 @@
     "summary": "Residents of the La Joya housing development in Cuernavaca, Morelos, Mexico, reported the alleged presence of a capuchin monkey being kept inside a neighboring apartment, raising concerns about illegal possession of a protected wild species under Mexico's General Wildlife Law. Neighbors asked authorities to intervene and relocate the animal. Translated from Spanish-language reporting; single source, outcome not yet confirmed.",
     "sourceName": "TV Azteca Morelos",
     "sourceUrl": "https://www.aztecamorelos.com/noticias/alerta-en-morelos-vecinos-denuncian-presencia-de-mono-capuchino/"
+  },
+  {
+    "id": "2026-id-klungkung-nyalian-macaque-raids",
+    "title": "Wild Macaque Troop Raids Crops and Homes in Nyalian Village, Bali, Indonesia",
+    "dateStart": "2026-09-15",
+    "dateEnd": "2026-09-16",
+    "city": "Nyalian, Banjarangkan, Klungkung",
+    "state": "",
+    "country": "ID",
+    "lat": -8.4993,
+    "lng": 115.3673,
+    "tier": "confirmed",
+    "status": "monitoring",
+    "category": "sighting",
+    "count": 30,
+    "severity": "moderate",
+    "radiusKm": 10,
+    "summary": "A large troop of wild long-tailed macaques believed to be moving along the Tukad Bubuh river corridor has spent roughly a month raiding farmland and increasingly entering residential areas of Nyalian village in Banjarangkan district, Klungkung regency, Bali, Indonesia, destroying coconut, durian, and other crops and causing some farmers total harvest losses. The local disaster management agency (BPBD Klungkung) said it has struggled to intervene because the animals disperse before officials arrive and the area is part of the macaques natural range, making removal difficult. No injuries to people have been reported. Translated from Indonesian-language reporting, corroborated by multiple local outlets.",
+    "sourceName": "Radar Bali (Jawa Pos)",
+    "sourceUrl": "https://radarbali.jawapos.com/peristiwa/2609160014/makin-beringas-dan-masuk-permukiman-kawanan-monyet-serang-tanaman-warga-desa-nyalian"
   }
 ]
