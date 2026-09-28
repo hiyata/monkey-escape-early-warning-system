@@ -3423,7 +3423,7 @@
     "id": "2026-in-palwal-monkey-terror",
     "title": "Monkeys Terrorize Residents Across Palwal, India, Biting Several People",
     "dateStart": "2026-09-16",
-    "dateEnd": "2026-09-16",
+    "dateEnd": "2026-09-28",
     "city": "Palwal",
     "state": "",
     "country": "IN",
@@ -3432,10 +3432,10 @@
     "tier": "reported",
     "status": "at_large",
     "category": "attack",
-    "count": 3,
+    "count": 8,
     "severity": "minor",
     "radiusKm": 10,
-    "summary": "Troops of monkeys have been moving through Palwal, Haryana, India, targeting children, the elderly, and women alone at home, with several people bitten in a recent spate of incidents. Translated from Hindi-language reporting; single-source account.",
+    "summary": "Troops of monkeys have continued moving through Palwal, Haryana, India, targeting children, the elderly, and women alone at home. By September 28, 2026, follow-up reporting counted eight people bitten across Ward 8, Ward 9, and the Ahir and Garhi neighborhoods, including a mosque imam and a doctor who required hospital treatment. Translated from Hindi-language reporting; single-source account across two follow-up articles.",
     "sourceName": "Amar Ujala",
     "sourceUrl": "https://www.amarujala.com/haryana/palwal/monkeys-terrorize-the-city-bite-several-people-palwal-news-c-25-1-mwt1001-115517-2026-09-16"
   },
@@ -4038,5 +4038,25 @@
     "summary": "A coalition of 27 international wildlife and animal-welfare organizations sent an open letter dated September 22, 2026, to Reliance-backed Vantara, a privately funded zoo and rescue facility in Jamnagar, India, calling on it to permanently end all wild animal imports rather than rely on a 12-month voluntary moratorium announced in August 2026. The letter cites a pattern of questionable primate acquisitions feeding suspicion of Vantara's sourcing practices, including an orangutan seized from a Mumbai apartment, a Tamil film actor's pet lar gibbon later traced to unlawful transfers, and disputed lemurs held at the facility, alongside a broader CITES Secretariat inquiry into Vantara's import of more than 60,000 live animals across roughly 2,000 species since 2022. Corroborated by Mongabay, Down To Earth, The Wire, Born Free, and other outlets.",
     "sourceName": "Mongabay",
     "sourceUrl": "https://news.mongabay.com/2026/09/ngos-call-on-vantara-to-end-all-wild-animal-imports-permanently/"
+  },
+  {
+    "id": "2026-in-bhusawar-monkey-menace",
+    "title": "Monkey Troops Injure Villagers Across Six Villages Near Bhusawar, India",
+    "dateStart": "2026-09-27",
+    "dateEnd": "2026-09-27",
+    "city": "Bhusawar",
+    "state": "",
+    "country": "IN",
+    "lat": 27.0361,
+    "lng": 77.0528,
+    "tier": "reported",
+    "status": "at_large",
+    "category": "attack",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 15,
+    "summary": "Monkey troops have been injuring residents and damaging crops across Bhusawar and five neighboring villages in Bharatpur district, Rajasthan, India. A young man, Vasu Singhal, was seriously injured in a monkey attack, prompting a former village sarpanch to petition the state governor and chief minister for administrative action against the growing monkey menace. Translated from Hindi-language reporting; single-source account.",
+    "sourceName": "Pratahkal",
+    "sourceUrl": "https://www.pratahkal.com/bharatpur/bhusawar-monkey-menace-villagers-demand-action-1635894"
   }
 ]
