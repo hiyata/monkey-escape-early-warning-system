@@ -2861,9 +2861,9 @@
   },
   {
     "id": "2026-ng-kano-jigawa-trafficking-bust",
-    "title": "Nigeria Customs Seizes 48 Trafficked Animals Including Gorillas, Chimpanzees, and Bush Babies",
+    "title": "Nigeria Customs Seizes 48 Trafficked Animals Including Gorillas, Chimpanzees, and Bush Babies; Suspects Arraigned",
     "dateStart": "2026-08-25",
-    "dateEnd": "2026-09-04",
+    "dateEnd": "2026-09-16",
     "city": "Kano/Jigawa (Kano-Daura road)",
     "state": "",
     "country": "NG",
@@ -2875,9 +2875,9 @@
     "count": 15,
     "severity": "major",
     "radiusKm": 25,
-    "summary": "Nigeria Customs Service's Kano/Jigawa Area Command intercepted a vehicle carrying 48 wild animals along the Kano-Daura road, including 15 primates -- two baby gorillas, four chimpanzees, and bush babies (galagos) -- alongside civets, caracals, crocodiles, a honey badger, and 25 birds. Three suspects were arrested and handed to the Special Wildlife Office for prosecution under the Nigeria Customs Service Act 2023 and CITES; officials described it as the largest single wildlife seizure in the service's history. The animals were intercepted August 25 and the bust was publicized in a press briefing September 4. Corroborated by five independent outlets.",
-    "sourceName": "World Animal News / EnviroNews Nigeria / Leadership.ng",
-    "sourceUrl": "https://worldanimalnews.com/2026/09/01/2-baby-gorillas-4-chimpanzees-among-48-wild-animals-recovered-in-wildlife-trafficking-bust-in-nigeria/"
+    "summary": "Nigeria Customs Service's Kano/Jigawa Area Command intercepted three men on the Kano-Daura road on August 25, 2026, carrying 48 wild animals including 15 primates -- two baby gorillas (believed to be Cross River gorillas), four chimpanzees, seven red patas monkeys, and two galagos (bush babies) -- alongside civets, caracals, crocodiles, a honey badger, and other protected species. Officials called it the largest single wildlife seizure in the service's history. The three suspects were formally arraigned on conspiracy and illegal wildlife trafficking charges before the Federal High Court in Kano on September 16, 2026, with a bail hearing set for October 7. Corroborated by multiple independent outlets.",
+    "sourceName": "World Animal News / PRNigeria News",
+    "sourceUrl": "https://prnigeria.com/2026/09/16/customs-arraigns-over-alleged/"
   },
   {
     "id": "2026-de-fuchtorf-capuchin-escape",
@@ -2901,10 +2901,10 @@
   },
   {
     "id": "2026-in-balasore-orangutan-trafficking",
-    "title": "Five Baby Orangutans Found Abandoned in Odisha, Suspected Wildlife Smuggling Transit",
-    "dateStart": "2026-09-09",
-    "dateEnd": "2026-09-09",
-    "city": "Balasore (Bhograi)",
+    "title": "Five Baby Orangutans Found Abandoned in Odisha, Suspected Trafficked From Indonesia",
+    "dateStart": "2026-09-08",
+    "dateEnd": "2026-09-18",
+    "city": "Balasore (Bhograi/Bichitrapur forest); moved to Bhubaneswar",
     "state": "",
     "country": "IN",
     "lat": 21.6167,
@@ -2915,8 +2915,8 @@
     "count": 5,
     "severity": "major",
     "radiusKm": 15,
-    "summary": "Villagers in the Bhograi area of Balasore district, Odisha, India, spotted five juvenile orangutans -- three males and two females, all under a year old -- in a casuarina plantation near the Udayapur-Talsari border, initially mistaking them for monkeys. Orangutans are not native to India, so forest officials suspect the animals were abandoned mid-transit by an international wildlife-smuggling operation using Odisha as a transit route. All five were moved to Nandankanan Zoological Park for quarantine; by September 11-12, Odisha's Special Task Force had questioned three suspects in West Bengal and was tracing a black SUV believed to have transported the animals, Chief Minister Mohan Charan Majhi ordered a full probe, and Indonesia's forestry ministry said it suspects Sumatran origin and is seeking repatriation pending DNA testing.",
-    "sourceName": "Down To Earth",
+    "summary": "Villagers found five juvenile orangutans -- three males and two females, all under about a year and a half old -- abandoned in the Bichitrapur forest block of Balasore district, Odisha, India, near the Udayapur-Talsari border, initially mistaking them for monkeys. Orangutans are not native to India, so authorities suspect the animals were abandoned mid-transit by an international wildlife-smuggling network with a suspected Southeast Asia route; all five were moved to Nandankanan Zoological Park in Bhubaneswar for quarantine. Odisha's Special Task Force filed a case on September 11 and focused its probe on a Digha, West Bengal hotel owner and his son, both reportedly absconding, and a black SUV believed used to transport the animals; as of mid-to-late September the key suspects remained at large, Indonesia's government was pursuing repatriation pending DNA testing, and custody of the orangutans was unresolved.",
+    "sourceName": "Down To Earth / Mongabay / Siasat",
     "sourceUrl": "https://www.downtoearth.org.in/wildlife-biodiversity/rescued-orangutans-in-odisha-likely-spent-time-with-humans-officials-say"
   },
   {
@@ -3540,26 +3540,6 @@
     "sourceUrl": "https://news.qq.com/rain/a/20260921A06EJ100"
   },
   {
-    "id": "2026-ng-kano-trafficking-arraignment",
-    "title": "Nigerian Customs Arraigns Three Over Trafficking of Baby Gorillas, Chimpanzees and Other Wildlife",
-    "dateStart": "2026-08-25",
-    "dateEnd": "2026-09-16",
-    "city": "Kano",
-    "state": "",
-    "country": "NG",
-    "lat": 12.0022,
-    "lng": 8.592,
-    "tier": "confirmed",
-    "status": "resolved",
-    "category": "trade_legal",
-    "count": 15,
-    "severity": "major",
-    "radiusKm": 30,
-    "summary": "Nigeria Customs Service's Kano/Jigawa Area Command intercepted three men on the Kano-Daura road on August 25, 2026, with 48 live wild animals including two baby gorillas (believed to be Cross River gorillas), four chimpanzees, seven red patas monkeys, and two galagos (bush babies), along with caracals and other protected species. The suspects were formally arraigned on conspiracy and illegal wildlife trafficking charges before the Federal High Court in Kano on September 16, 2026, with the case proceeding to a bail hearing on October 7. Officials called it one of the largest single wildlife seizures in the agency's history.",
-    "sourceName": "PRNigeria News",
-    "sourceUrl": "https://prnigeria.com/2026/09/16/customs-arraigns-over-alleged/"
-  },
-  {
     "id": "2026-jp-matsue-schoolboy-monkey-encounter",
     "title": "Middle School Student Injured in Monkey Encounter Near Matsue, Japan",
     "dateStart": "2026-09-16",
@@ -3578,26 +3558,6 @@
     "summary": "A middle school boy sustained a minor injury after being confronted by a lone wild macaque while walking to school in Matsue City, Shimane Prefecture, Japan, on September 16, 2026. A solitary macaque was also sighted elsewhere in the city on September 9 and September 17, separate from a larger troop reported moving through nearby Yonago around the same time. Translated from Japanese-language reporting.",
     "sourceName": "Yahoo News Japan / BSS San'in",
     "sourceUrl": "https://news.yahoo.co.jp/articles/ea6c4c136c6bd9eec5ed059267f8c155b4fb44b8"
-  },
-  {
-    "id": "2026-in-odisha-orangutan-trafficking",
-    "title": "Five Baby Orangutans Found Abandoned in Indian Forest, Suspected Trafficked From Indonesia",
-    "dateStart": "2026-09-08",
-    "dateEnd": "2026-09-26",
-    "city": "Balasore (Bichitrapur forest); moved to Bhubaneswar",
-    "state": "",
-    "country": "IN",
-    "lat": 20.3937,
-    "lng": 85.8146,
-    "tier": "confirmed",
-    "status": "monitoring",
-    "category": "trade_legal",
-    "count": 5,
-    "severity": "major",
-    "radiusKm": 5,
-    "summary": "Five baby orangutans, aged roughly six months to a year and a half and suspected to be Sumatran orangutans, were found abandoned in the Bichitrapur forest block of Balasore district, Odisha, India, and moved to Nandankanan Zoological Park in Bhubaneswar for quarantine and care. Since orangutans exist only in the wild in Indonesia and Malaysia, their discovery in India points to illegal cross-border trafficking, reportedly via a smuggling route through Aceh and Thailand. Indonesia's government is coordinating a repatriation effort while Odisha state authorities and India's Wildlife Crime Control Bureau investigate; custody of the animals remains unresolved.",
-    "sourceName": "Mongabay",
-    "sourceUrl": "https://news.mongabay.com/2026/09/five-orangutans-found-in-india-face-long-road-back-home-to-indonesia/"
   },
   {
     "id": "2026-bd-gazipur-lemur-vantara-dispute",
