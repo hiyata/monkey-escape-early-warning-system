@@ -3743,21 +3743,21 @@
     "id": "2026-fl-gainesville-jungle-friends-usda-complaint",
     "title": "USDA Complaint Accuses Jungle Friends Primate Sanctuary of Animal Welfare Act Violations",
     "dateStart": "2026-09-22",
-    "dateEnd": "2026-09-22",
+    "dateEnd": "2026-10-02",
     "city": "Gainesville",
     "state": "FL",
     "country": "US",
     "lat": 29.6516,
     "lng": -82.3248,
-    "tier": "reported",
+    "tier": "confirmed",
     "status": "monitoring",
     "category": "lab_incident",
     "count": 298,
     "severity": "moderate",
     "radiusKm": 5,
-    "summary": "A USDA complaint alleges Jungle Friends Primate Sanctuary, located in Alachua County near Gainesville, Florida, violated the Animal Welfare Act by failing to provide primates proper food, veterinary care, and safe living conditions, citing unsanitary and rusty enclosures. The sanctuary, home to roughly 298 rescued monkeys, was the subject of a similar USDA draft inspection report flagging deteriorating conditions in 2021. Founder Kari Bagnall disputes that important context is missing from the complaint and says corrective action has been taken.",
-    "sourceName": "WCJB TV20",
-    "sourceUrl": "https://www.wcjb.com/2026/09/22/usda-complaint-accuses-jungle-friends-primate-sanctuary-violating-animal-welfare-act/"
+    "summary": "A formal USDA complaint accuses Jungle Friends Primate Sanctuary, located in Alachua County near Gainesville, Florida, of 19 separate Animal Welfare Act violations documented over more than a dozen inspections between September 2021 and June 2026, including inadequate veterinary care, expired or incorrect medication, unsanitary and rusty enclosures, and poor pest control. The most serious allegation concerns the 2023 death of a cotton-top tamarin named Lola, which the complaint attributes partly to inadequate veterinary monitoring. Founder Kari Bagnall says the complaint lacks context, that three of four 2026 inspections found no violations, and that she is drafting a formal response.",
+    "sourceName": "WCJB TV20 / WUFT / Local 3 News",
+    "sourceUrl": "https://www.wuft.org/animals/2026-10-02/gainesville-primate-sanctuary-faces-usda-complaint-alleging-repeated-animal-welfare-violations"
   },
   {
     "id": "2026-mx-cuernavaca-capuchin-apartment-report",
@@ -4598,5 +4598,25 @@
     "summary": "Hong Kong's Agriculture, Fisheries and Conservation Department began a monthlong enforcement operation on October 1, 2026, against illegal feeding of wild monkeys and boars at Kam Shan ('Monkey Hill') and Lion Rock Country Parks, deploying AI-equipped CCTV cameras. The department said it had already issued 86 fixed penalty notices and secured 12 convictions, with fines up to HK$10,500, since an amended ordinance raised maximum penalties for feeding wild monkeys to HK$100,000 and one year's imprisonment. The campaign targets the city's feral macaque population, distinct from the Wong Tai Sin home-intrusion incidents also tracked in this dataset. Translated from Chinese-language reporting and an official government press release; corroborated by multiple outlets.",
     "sourceName": "Hong Kong Government Press Releases / HK01 / Ming Pao",
     "sourceUrl": "https://www.info.gov.hk/gia/general/202609/30/P2026093000306.htm"
+  },
+  {
+    "id": "2026-br-mairipora-monkey-powerline-rescue",
+    "title": "Woman Performs CPR to Revive Monkey Electrocuted on Power Lines in Mairipora, Brazil",
+    "dateStart": "2026-09-29",
+    "dateEnd": "2026-09-29",
+    "city": "Mairipora",
+    "state": "",
+    "country": "BR",
+    "lat": -23.3184,
+    "lng": -46.5861,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "sighting",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 5,
+    "summary": "A wild monkey was knocked unconscious after contacting electrical wiring and falling in Mairipora, in the Greater Sao Paulo metropolitan area of Brazil. A passerby, identified as Vilma, performed chest compressions on the animal until it showed signs of life, after which the group transported it to local authorities; firefighters took custody of the monkey to check for burns before a planned release back into a wild area. Translated from Portuguese-language reporting; single-source video account republished by several regional outlets.",
+    "sourceName": "SoNoticiaBoa / 96FM",
+    "sourceUrl": "https://www.sonoticiaboa.com.br/2026/09/29/macaco-leva-choque-fios-mairipora"
   }
 ]
