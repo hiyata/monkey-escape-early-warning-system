@@ -3355,8 +3355,8 @@
     "count": 1,
     "severity": "minor",
     "radiusKm": 5,
-    "summary": "A man in his 40s was surrounded by more than a dozen wild Japanese macaques from a locally known troop while walking in front of a hot-spring inn in Yugawara, Kanagawa Prefecture, and was bitten multiple times on his hand before being taken to a hospital with minor injuries. The troop has been increasingly aggressive toward residents, and prefectural approval for a capture operation was still pending as of the report. Translated from Japanese-language reporting.",
-    "sourceName": "Nippon TV (via Yahoo! News Japan)",
+    "summary": "A man in his 40s was surrounded by more than a dozen wild Japanese macaques from a troop locally known as Troop T1 while walking in front of a hot-spring inn in Yugawara, Kanagawa Prefecture, and was bitten multiple times on his hand before being taken to a hospital with minor injuries. Yugawara logged over 900 monkey-related aggression or intimidation incidents in the preceding year, and the city has been seeking prefectural authorization to capture the troop, which had not yet been granted as of the report. Translated from Japanese-language reporting.",
+    "sourceName": "Nippon TV (via Yahoo! News Japan) / SoraNews24",
     "sourceUrl": "https://news.yahoo.co.jp/articles/175eda23bd193171623b8d24299a52240b99124d"
   },
   {
@@ -4440,26 +4440,6 @@
     "sourceUrl": "https://www.amarujala.com/uttarakhand/almora/monkeys-turn-aggressive-system-remains-asleep-people-living-in-fear-almora-news-c-232-1-alm1002-149409-2026-10-02"
   },
   {
-    "id": "2026-jp-yugawara-troop-t1-attack",
-    "title": "Troop of Monkeys Surrounds and Bites Man in Japanese Hot Spring Town",
-    "dateStart": "2026-09-17",
-    "dateEnd": "2026-09-17",
-    "city": "Yugawara",
-    "state": "",
-    "country": "JP",
-    "lat": 35.1189,
-    "lng": 139.0767,
-    "tier": "confirmed",
-    "status": "at_large",
-    "category": "attack",
-    "count": 1,
-    "severity": "minor",
-    "radiusKm": 10,
-    "summary": "A man in his 40s was surrounded by more than 10 monkeys from a troop known locally as Troop T1 in the hot spring town of Yugawara, Kanagawa Prefecture, Japan, and bitten several times on his hands before escaping; he was treated for minor injuries. Yugawara logged over 900 monkey-related aggression or intimidation incidents in the preceding year, and the city has been seeking prefectural authorization to capture the troop, which has not yet been granted.",
-    "sourceName": "SoraNews24 / Japan Today",
-    "sourceUrl": "https://soranews24.com/2026/09/20/gang-of-angry-monkeys-surrounds-and-attacks-man-in-japanese-hot-spring-town/"
-  },
-  {
     "id": "2026-br-campogrande-howler-powerline-rescue",
     "title": "Howler Monkey Rescued From Power Lines in Campo Grande, Brazil",
     "dateStart": "2026-09-28",
@@ -4618,5 +4598,25 @@
     "summary": "A wild monkey was knocked unconscious after contacting electrical wiring and falling in Mairipora, in the Greater Sao Paulo metropolitan area of Brazil. A passerby, identified as Vilma, performed chest compressions on the animal until it showed signs of life, after which the group transported it to local authorities; firefighters took custody of the monkey to check for burns before a planned release back into a wild area. Translated from Portuguese-language reporting; single-source video account republished by several regional outlets.",
     "sourceName": "SoNoticiaBoa / 96FM",
     "sourceUrl": "https://www.sonoticiaboa.com.br/2026/09/29/macaco-leva-choque-fios-mairipora"
+  },
+  {
+    "id": "2026-br-salvador-capuchin-escape",
+    "title": "Pet Capuchin Monkey 'Alcebiades' Escapes Former Lawmaker's Home in Salvador, Brazil",
+    "dateStart": "2026-10-05",
+    "dateEnd": "2026-10-05",
+    "city": "Salvador",
+    "state": "",
+    "country": "BR",
+    "lat": -12.9777,
+    "lng": -38.5016,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "escape",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 10,
+    "summary": "A pet capuchin monkey named Alcebiades, kept by former Bahia state deputy Marcell Moraes, escaped from the residence where he was staying in the Alphaville 2 condominium in Salvador, Brazil, on October 5, 2026. The monkey got into a neighboring house, including a room where a newborn was sleeping, alarming residents for hours before being recaptured the same afternoon; the owner said the animal is registered with Brazil's environmental agency, Ibama. Translated from Portuguese-language reporting.",
+    "sourceName": "Bahia Noticias / A Tarde",
+    "sourceUrl": "https://www.bahianoticias.com.br/noticia/322081-video-macaco-de-marcell-moraes-e-resgatado-em-condominio-de-luxo-de-salvador"
   }
 ]
