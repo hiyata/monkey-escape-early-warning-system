@@ -4613,10 +4613,10 @@
     "status": "resolved",
     "category": "escape",
     "count": 1,
-    "severity": "minor",
+    "severity": "moderate",
     "radiusKm": 10,
-    "summary": "A pet capuchin monkey named Alcebiades, kept by former Bahia state deputy Marcell Moraes, escaped from the residence where he was staying in the Alphaville 2 condominium in Salvador, Brazil, on October 5, 2026. The monkey got into a neighboring house, including a room where a newborn was sleeping, alarming residents for hours before being recaptured the same afternoon; the owner said the animal is registered with Brazil's environmental agency, Ibama. Translated from Portuguese-language reporting.",
-    "sourceName": "Bahia Noticias / A Tarde",
+    "summary": "A pet capuchin monkey named Alcebiades, kept by former Bahia state deputy Marcell Moraes, escaped from the residence where he was staying in the Alphaville 2 condominium in Salvador, Brazil, on October 5, 2026. The monkey entered several neighboring homes, including a room where a newborn was sleeping (the infant was unharmed), broke a bathroom glass shower enclosure, and drank isopropyl alcohol and ingested medication, while minorly injuring three residents plus a security guard and a police officer during the roughly three-and-a-half-hour capture effort. He was taken to a wildlife triage center in a debilitated state; the owner said the animal is registered with Brazil's environmental agency, Ibama. Translated from Portuguese-language reporting.",
+    "sourceName": "Bahia Noticias / A Tarde / Mais Goias",
     "sourceUrl": "https://www.bahianoticias.com.br/noticia/322081-video-macaco-de-marcell-moraes-e-resgatado-em-condominio-de-luxo-de-salvador"
   },
   {
