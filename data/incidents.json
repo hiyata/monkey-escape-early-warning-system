@@ -4838,5 +4838,25 @@
     "summary": "A large male long-tailed macaque, weighing about 9.5 kilograms, had been disturbing a residential area of Cat Lai ward, Thu Duc, Ho Chi Minh City, Vietnam, climbing roofs and entering homes looking for food. After it fought with two guard dogs, city forest rangers tranquilized and captured it on October 7, 2026, taking it to the Cu Chi Wildlife Rescue Station ahead of a planned release to the wild. Translated from Vietnamese-language reporting.",
     "sourceName": "Tien Phong",
     "sourceUrl": "https://tienphong.vn/ban-gay-me-bat-con-khi-quay-pha-khu-dan-cu-tphcm-post1883068.tpo"
+  },
+  {
+    "id": "2026-wi-madison-navs-pain-medication",
+    "title": "Audit Finds UW-Madison Primate Lab Skipped Required Pain Medication for Eight Monkeys",
+    "dateStart": "2026-10-06",
+    "dateEnd": "2026-10-06",
+    "city": "Madison",
+    "state": "WI",
+    "country": "US",
+    "lat": 43.0731,
+    "lng": -89.4012,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "lab_incident",
+    "count": 8,
+    "severity": "moderate",
+    "radiusKm": 3,
+    "summary": "An audit of federal inspection records by animal-advocacy group NAVS found that eight monkeys at the University of Wisconsin-Madison's primate research center did not receive required post-experiment pain medication, stemming from a February 2025 USDA inspection that resulted in three citations. A university spokesperson said corrective actions were already in place and that USDA had not penalized the university.",
+    "sourceName": "Wisconsin Public Radio",
+    "sourceUrl": "https://www.wpr.org/news/federal-reports-violations-uw-madison-primate-research-center"
   }
 ]
