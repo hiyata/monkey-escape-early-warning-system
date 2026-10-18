@@ -5038,5 +5038,25 @@
     "summary": "PETA released video on October 12, 2026, obtained through a public records request, showing infant macaques at the University of Washington's primate research center (recently rebranded the Washington National Biomedical Research Center) that were exposed to a neurotoxin before birth, separated from their mothers, and subjected to repeated neurological tests starting at about two days old, including head-shaving and electrode attachment. A companion PETA release the same day said Oregon Health and Science University has continued supplying days-old monkeys to the Seattle center for infectious-disease experiments. The claims come from PETA, an advocacy group campaigning to close the center; no independent verification or UW response to this specific video was found.",
     "sourceName": "PETA",
     "sourceUrl": "https://www.peta.org/media/news-releases/peta-video-reveals-infant-monkeys-torn-from-their-mothers-like-those-at-uw-primate-center/"
+  },
+  {
+    "id": "2026-az-mesa-uw-primate-citation",
+    "title": "USDA Issues Rare Critical Citation Against University of Washington Over 2024 Monkey Escape at Arizona Breeding Facility",
+    "dateStart": "2026-10-15",
+    "dateEnd": "2026-10-15",
+    "city": "Mesa",
+    "state": "AZ",
+    "country": "US",
+    "lat": 33.4152,
+    "lng": -111.8315,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "lab_incident",
+    "count": 8,
+    "severity": "major",
+    "radiusKm": 3,
+    "summary": "The USDA issued a critical Animal Welfare Act citation against the University of Washington following a PETA complaint over a mass escape of pigtail macaques at UW's primate breeding facility near Mesa, Arizona. The underlying incident occurred in March 2024, when staff failed to double-check an enclosure lock after a cage change, letting a group of macaques escape and reach another group through the enclosure mesh; eight monkeys were injured and one was later euthanized. PETA, which has repeatedly called for UW's primate research facilities to be closed, says USDA reserves critical citations for only the most serious violations. PETA is the source publicizing the citation; USDA's own announcement was not independently found.",
+    "sourceName": "PETA",
+    "sourceUrl": "https://www.peta.org/?p=1205494"
   }
 ]
