@@ -5178,5 +5178,25 @@
     "summary": "A troop of more than 15 long-tailed macaques from the Ban Dan Kao mangrove forest in Wang Krajae subdistrict, Mueang Trat district, Trat province, Thailand, has been climbing power and communication lines to raid kitchens, a coffee shop, and other businesses in more than ten homes, reported on October 13, 2026. Residents and a former local mangrove conservation center chief said the monkeys no longer fear people and have become aggressive, attributing the growing troop size to habitat loss and rapid breeding; officials are being asked to sterilize and relocate the animals to Khao Soi Dao wildlife sanctuary. Corroborated by multiple Thai-language outlets (Naewna, Thai Post, Siam Rath); translated from Thai-language reporting.",
     "sourceName": "Naewna",
     "sourceUrl": "https://www.naewna.com/n/110777"
+  },
+  {
+    "id": "2026-or-beaverton-onprc-macaque-injury",
+    "title": "PETA Files USDA Complaint Over Juvenile Macaque's Hand Injuries at Oregon Primate Center",
+    "dateStart": "2026-10-20",
+    "dateEnd": "2026-10-20",
+    "city": "Beaverton",
+    "state": "OR",
+    "country": "US",
+    "lat": 45.5231,
+    "lng": -122.8718,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "lab_incident",
+    "count": 1,
+    "severity": "major",
+    "radiusKm": 3,
+    "summary": "PETA filed a USDA complaint on October 20, 2026 alleging that a juvenile female rhesus macaque at the Oregon National Primate Research Center, part of Oregon Health and Science University's West Campus near Beaverton, suffered severe hand injuries in July 2026 after staff failed to properly secure a sliding divider between two adjoining pens during a routine animal transfer. The macaque was found separated from her social group with fractures in both hands and underwent multiple digit amputations between July 3 and July 9, 2026. OHSU reported the incident to the federal Office of Laboratory Animal Welfare as noncompliance; PETA argues it also violates the Animal Welfare Act and is seeking a USDA investigation. No independent confirmation of USDA action was found as of this writing.",
+    "sourceName": "PETA",
+    "sourceUrl": "https://www.peta.org/wp-content/uploads/2026/10/2026-10-20-ohsu-usda-complaint-final.pdf"
   }
 ]
