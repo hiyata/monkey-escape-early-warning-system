@@ -5198,5 +5198,25 @@
     "summary": "PETA filed a USDA complaint on October 20, 2026 alleging that a juvenile female rhesus macaque at the Oregon National Primate Research Center, part of Oregon Health and Science University's West Campus near Beaverton, suffered severe hand injuries in July 2026 after staff failed to properly secure a sliding divider between two adjoining pens during a routine animal transfer. The macaque was found separated from her social group with fractures in both hands and underwent multiple digit amputations between July 3 and July 9, 2026. OHSU reported the incident to the federal Office of Laboratory Animal Welfare as noncompliance; PETA argues it also violates the Animal Welfare Act and is seeking a USDA investigation. No independent confirmation of USDA action was found as of this writing.",
     "sourceName": "PETA",
     "sourceUrl": "https://www.peta.org/wp-content/uploads/2026/10/2026-10-20-ohsu-usda-complaint-final.pdf"
+  },
+  {
+    "id": "2026-za-capetown-baboon-car-bite",
+    "title": "Chacma Baboon Bites Woman Who Grabbed It After It Raided Her Parked Car in Cape Town",
+    "dateStart": "2026-10-18",
+    "dateEnd": "2026-10-18",
+    "city": "Cape Town",
+    "state": "",
+    "country": "ZA",
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "attack",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 10,
+    "summary": "A wild chacma baboon opened the door of a parked car in Cape Town, South Africa, and climbed in to take snacks from the front seat; when the car's owner grabbed the animal with her bare hands to drive it off, it bit her. Footage of the encounter was shared on TikTok on October 18, 2026, and local reporting urged the woman to get the bite checked promptly given rabies and infection risk. The incident is part of a wider pattern of chacma baboons breaking into vehicles and homes around Cape Town's urban-wildland interface. Single-source report.",
+    "sourceName": "Briefly News (South Africa)",
+    "sourceUrl": "https://briefly.co.za/people/256487-bite-checked-asap-cape-town-woman-bitten-by-baboon-viral-food-struggle-sa-concerned/"
   }
 ]
