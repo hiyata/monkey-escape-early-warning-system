@@ -5298,5 +5298,25 @@
     "summary": "A 49-year-old man in Shunan, Yamaguchi Prefecture, Japan, said a wild Japanese macaque entered his garden around 3:40 p.m. on Tuesday, October 13, 2026, threw a stray cat that lived there into a garden pond, then leapt onto his back and clawed him when he intervened. The man suffered only minor injuries. Translated and summarized from Japanese-sourced reporting carried by SoraNews24, a single-source account not yet independently confirmed by other outlets.",
     "sourceName": "SoraNews24",
     "sourceUrl": "https://soranews24.com/2026/10/15/man-in-japan-says-monkey-threw-his-cat-into-a-pond-before-attacking-him/"
+  },
+  {
+    "id": "2026-in-balasore-orangutan-cubs",
+    "title": "Five Baby Orangutans Found Abandoned in Odisha; Indonesia Seeks Repatriation",
+    "dateStart": "2026-09-08",
+    "dateEnd": "2026-10-21",
+    "city": "Balasore (near Badapali village)",
+    "state": "",
+    "country": "IN",
+    "lat": 21.4942,
+    "lng": 86.9317,
+    "tier": "confirmed",
+    "status": "monitoring",
+    "category": "trade_legal",
+    "count": 5,
+    "severity": "major",
+    "radiusKm": 25,
+    "summary": "Forest officers in Balasore district, Odisha, India found five infant orangutans (three males and two females, aged roughly six months to a year) abandoned in a casuarina plantation on September 8, 2026, suspected victims of international wildlife trafficking. The animals are being held in a quarantine enclosure at Nandankanan Zoological Park while DNA testing confirms their origin; Indonesia's forestry ministry formally requested their repatriation as of October 21, 2026, citing CITES Appendix I protections, following the October 19 return of a separate orangutan, Rocky, from India to Indonesia. A joint Indian-Indonesian criminal investigation into the trafficking is ongoing.",
+    "sourceName": "Outlook India",
+    "sourceUrl": "https://www.outlookindia.com/national/indonesia-seeks-repatriation-of-rescued-baby-orangutans-found-in-odisha"
   }
 ]
