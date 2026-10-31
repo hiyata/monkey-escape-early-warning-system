@@ -5318,5 +5318,25 @@
     "summary": "Forest officers in Balasore district, Odisha, India found five infant orangutans (three males and two females, aged roughly six months to a year) abandoned in a casuarina plantation on September 8, 2026, suspected victims of international wildlife trafficking. The animals are being held in a quarantine enclosure at Nandankanan Zoological Park while DNA testing confirms their origin; Indonesia's forestry ministry formally requested their repatriation as of October 21, 2026, citing CITES Appendix I protections, following the October 19 return of a separate orangutan, Rocky, from India to Indonesia. A joint Indian-Indonesian criminal investigation into the trafficking is ongoing.",
     "sourceName": "Outlook India",
     "sourceUrl": "https://www.outlookindia.com/national/indonesia-seeks-repatriation-of-rescued-baby-orangutans-found-in-odisha"
+  },
+  {
+    "id": "2026-fr-lescar-exotic-park-monkey-theft",
+    "title": "Thieves Steal 14 Small Primates From Zoo Near Pau, France; Most Recovered, Suspects Arrested",
+    "dateStart": "2026-10-26",
+    "dateEnd": "2026-10-26",
+    "city": "Lescar",
+    "state": "",
+    "country": "FR",
+    "lat": 43.3264,
+    "lng": -0.4194,
+    "tier": "confirmed",
+    "status": "monitoring",
+    "category": "trade_legal",
+    "count": 14,
+    "severity": "moderate",
+    "radiusKm": 15,
+    "summary": "Overnight on October 26-27, 2026, thieves broke into the Exotic Park zoo in Lescar, near Pau in southwestern France, and stole fourteen small primates, including marmosets and cotton-top tamarins, in roughly five minutes. The zoo director described the break-in as the work of professionals who may have had the animals pre-sold to buyers. French police arrested three suspects and recovered eleven of the animals, though a search continued for the last two; veterinarians warned that separating these highly social animals from their groups could prove fatal. Translated and summarized from French-language reporting (franceinfo, France 3 Nouvelle-Aquitaine, ICI), confirmed by multiple independent French outlets.",
+    "sourceName": "franceinfo",
+    "sourceUrl": "https://www.franceinfo.fr/environnement/biodiversite/animaux/une-dizaine-de-singes-voles-dans-un-zoo-pres-de-pau-l-etablissement-porte-plainte_8256103.html"
   }
 ]
