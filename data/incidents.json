@@ -5338,5 +5338,25 @@
     "summary": "Overnight on October 26-27, 2026, thieves broke into the Exotic Park zoo in Lescar, near Pau in southwestern France, and stole fourteen small primates, including marmosets and cotton-top tamarins, in roughly five minutes. The zoo director described the break-in as the work of professionals who may have had the animals pre-sold to buyers. French police arrested three suspects and recovered eleven of the animals, though a search continued for the last two; veterinarians warned that separating these highly social animals from their groups could prove fatal. Translated and summarized from French-language reporting (franceinfo, France 3 Nouvelle-Aquitaine, ICI), confirmed by multiple independent French outlets.",
     "sourceName": "franceinfo",
     "sourceUrl": "https://www.franceinfo.fr/environnement/biodiversite/animaux/une-dizaine-de-singes-voles-dans-un-zoo-pres-de-pau-l-etablissement-porte-plainte_8256103.html"
+  },
+  {
+    "id": "2026-in-ranaghat-slow-loris-smuggling",
+    "title": "Slow Loris Rescued in Police Raid Near Kalyani, West Bengal, Exposing Suspected Smuggling Attempt",
+    "dateStart": "2026-10-27",
+    "dateEnd": "2026-10-27",
+    "city": "Ranaghat",
+    "state": "",
+    "country": "IN",
+    "lat": 23.1805,
+    "lng": 88.5581,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "trade_legal",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 5,
+    "summary": "Police in the Ranaghat subdivision of Nadia district, West Bengal, raided a location near Kalyani on October 27, 2026 after a tip that two men were planning to smuggle a slow loris, a nocturnal prosimian primate protected under India's wildlife law. Superintendent of Police Aashish Maurya said the animal was recovered during the operation, exposing a suspected attempt to traffic the protected species. The report comes from a single wire source and does not confirm whether arrests were made.",
+    "sourceName": "UNI (United News of India)",
+    "sourceUrl": "https://www.uniindia.com/east-india/crime-wb-slow-loris-smuggle/228908"
   }
 ]
