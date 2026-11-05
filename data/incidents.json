@@ -5358,5 +5358,25 @@
     "summary": "Police in the Ranaghat subdivision of Nadia district, West Bengal, raided a location near Kalyani on October 27, 2026 after a tip that two men were planning to smuggle a slow loris, a nocturnal prosimian primate protected under India's wildlife law. Superintendent of Police Aashish Maurya said the animal was recovered during the operation, exposing a suspected attempt to traffic the protected species. The report comes from a single wire source and does not confirm whether arrests were made.",
     "sourceName": "UNI (United News of India)",
     "sourceUrl": "https://www.uniindia.com/east-india/crime-wb-slow-loris-smuggle/228908"
+  },
+  {
+    "id": "2026-in-sambhal-bukanala-villager-attack",
+    "title": "Monkey Troop Attacks Villager in Bukanala Sadat, Sambhal, India",
+    "dateStart": "2026-11-03",
+    "dateEnd": "2026-11-03",
+    "city": "Sambhal",
+    "state": "",
+    "country": "IN",
+    "lat": 28.5878,
+    "lng": 78.572,
+    "tier": "reported",
+    "status": "resolved",
+    "category": "attack",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 8,
+    "summary": "A troop of monkeys attacked a 45-year-old villager, Shaan Miyan, in Bukanala Sadat village, Sambhal district, Uttar Pradesh, India, on November 3, 2026, causing panic among residents, who say monkey attacks are a recurring problem and are demanding the animals be captured and relocated. Translated from Hindi-language reporting (Amar Ujala); single-source account.",
+    "sourceName": "Amar Ujala",
+    "sourceUrl": "https://www.amarujala.com/uttar-pradesh/sambhal/troop-of-monkeys-attacks-villager-panic-in-the-village-sambhal-news-c-275-1-sbl1015-142736-2026-11-03"
   }
 ]
