@@ -5418,5 +5418,25 @@
     "summary": "A monkey attacked farmer Amir Khan while he was grazing goats near a cooperative society in Dahemi village, Budaun district, Uttar Pradesh, India, on November 6, 2026. He was treated at a private clinic and released; residents said the attack left local children too frightened to play outside. Translated from Hindi-language reporting (Amar Ujala); single-source account.",
     "sourceName": "Amar Ujala",
     "sourceUrl": "https://www.amarujala.com/uttar-pradesh/budaun/monkey-attacks-farmer-in-dahemi-village-villagers-panic-badaun-news-c-123-1-ba11032-177089-2026-11-06"
+  },
+  {
+    "id": "2026-us-buffalo-marmoset-felony-sale",
+    "title": "Buffalo Man Charged With Felony After Undercover Marmoset Sale",
+    "dateStart": "2026-10-08",
+    "dateEnd": "2026-10-08",
+    "city": "Buffalo",
+    "state": "NY",
+    "country": "US",
+    "lat": 42.8864,
+    "lng": -78.8784,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "trade_legal",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 10,
+    "summary": "New York State Department of Environmental Conservation investigators ran an undercover operation after tips that a Buffalo resident was illegally offering a marmoset, a small primate, for sale; plainclothes officers purchased the animal for 7,000 dollars on October 8, 2026. The seller, who held no permit to possess the primate, was charged with illegal commercialization of wildlife, a class E felony, with the case returnable to Buffalo City Court. The marmoset was placed with a licensed primate sanctuary.",
+    "sourceName": "FingerLakes1.com (citing NY DEC)",
+    "sourceUrl": "https://www.fingerlakes1.com/2026/10/20/buffalo-marmoset-sale-leads-to-felony-wildlife-charge/"
   }
 ]
