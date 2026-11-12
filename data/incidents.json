@@ -5478,5 +5478,25 @@
     "summary": "Qianlingshan Park management in Guiyang, Guizhou province, China, issued a public notice on November 9, 2026 announcing a scientific population management and control operation for the park's roughly 1,000 wild macaques, authorized under China's Wildlife Protection Law and a forestry permit, running through February 28, 2027. The park will set up temporary restricted zones during the operation and reiterated bans on feeding or disturbing the monkeys. The action follows recurring visitor-bite incidents at the park, including an October 8, 2026 case in which a macaque bit a woman's buttock. Translated from Chinese-language reporting (Guizhou Daily, via Guangming Daily/gmw.cn); single official-notice source.",
     "sourceName": "Guizhou Daily (via Guangming Daily/gmw.cn)",
     "sourceUrl": "https://m.gmw.cn/2026-11/09/content_1304584135.htm"
+  },
+  {
+    "id": "2026-my-huluterengganu-police-car-crash",
+    "title": "Monkey Troop on Road Causes Police Patrol Car Crash in Hulu Terengganu, Malaysia",
+    "dateStart": "2026-11-08",
+    "dateEnd": "2026-11-08",
+    "city": "Hulu Terengganu",
+    "state": "",
+    "country": "MY",
+    "lat": 5.0667,
+    "lng": 102.6167,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "sighting",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 10,
+    "summary": "A police patrol car skidded and overturned on a wet bend at Km4, Jalan Simpang Bukit Kepah-Tapah, near Kampung Kepah in Hulu Terengganu, Malaysia, on November 8, 2026, after the driver swerved to avoid a troop of monkeys that suddenly appeared on the road. Two officers were injured: one broke his left arm and the other suffered jaw pain; both were treated at Hulu Terengganu Hospital. Confirmed by multiple independent outlets (Bernama, Malay Mail, The Star, New Straits Times).",
+    "sourceName": "Bernama",
+    "sourceUrl": "https://bernama.com/en/crime_courts/news.php?id=2631754"
   }
 ]
