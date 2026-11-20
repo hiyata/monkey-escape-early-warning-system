@@ -5638,5 +5638,25 @@
     "summary": "A wild chacma baboon has been roaming the Extension 10 residential area of eMalahleni (formerly Witbank), Mpumalanga, South Africa, since the weekend of November 14-15, 2026, after residents reported it had attacked a dog. As of November 17 it remained on the loose, moving from house to house and evading a local conservationist's attempts to capture it. No injuries to people have been reported. Single-source account from The Citizen's Witbank News.",
     "sourceName": "The Citizen (Witbank News)",
     "sourceUrl": "https://www.citizen.co.za/witbank-news/news-headlines/local-news/2026/11/17/baboon-spotted-on-rooftop-in-extension-10-as-it-remains-on-the-move"
+  },
+  {
+    "id": "2026-br-jaboatao-capital-reverso-monkey",
+    "title": "Pet Capuchin Monkey Seized From Penthouse During Anti-Trafficking Operation in Jaboatao dos Guararapes, Brazil",
+    "dateStart": "2026-11-17",
+    "dateEnd": "2026-11-17",
+    "city": "Jaboatao dos Guararapes",
+    "state": "",
+    "country": "BR",
+    "lat": -8.1131,
+    "lng": -35.0150,
+    "tier": "confirmed",
+    "status": "resolved",
+    "category": "trade_legal",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 5,
+    "summary": "Pernambuco's Civil Police found a pet capuchin monkey caged inside a penthouse apartment in the Piedade neighborhood of Jaboatao dos Guararapes, in Greater Recife, Brazil, on November 17, 2026, while serving search warrants as part of Operacao Capital Reverso, a drug-trafficking and money-laundering investigation targeting a group accused of moving over R$78 million. The monkey, reportedly bought in 2024 for about R$60,000 from a breeder in Santa Catarina and allegedly used to cut hair in a barbershop, was taken into custody and sent to the Cetas Tangara wildlife rehabilitation center in Recife. Confirmed by multiple Brazilian outlets including CBN Recife, Diario de Pernambuco, Metropoles and BNews; translated and summarized from Portuguese-language reporting.",
+    "sourceName": "CBN Recife",
+    "sourceUrl": "https://www.cbnrecife.com/2026/11/17/policia-civil-realiza-operacao-contra-grupo-suspeito-de-trafico-de-drogas-e-lavagem-de-dinheiro-em-pernambuco-e-no-parana-macaco-prego-e-recolhido-durante-acao/"
   }
 ]
