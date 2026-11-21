@@ -5658,5 +5658,25 @@
     "summary": "Pernambuco's Civil Police found a pet capuchin monkey caged inside a penthouse apartment in the Piedade neighborhood of Jaboatao dos Guararapes, in Greater Recife, Brazil, on November 17, 2026, while serving search warrants as part of Operacao Capital Reverso, a drug-trafficking and money-laundering investigation targeting a group accused of moving over R$78 million. The monkey, reportedly bought in 2024 for about R$60,000 from a breeder in Santa Catarina and allegedly used to cut hair in a barbershop, was taken into custody and sent to the Cetas Tangara wildlife rehabilitation center in Recife. Confirmed by multiple Brazilian outlets including CBN Recife, Diario de Pernambuco, Metropoles and BNews; translated and summarized from Portuguese-language reporting.",
     "sourceName": "CBN Recife",
     "sourceUrl": "https://www.cbnrecife.com/2026/11/17/policia-civil-realiza-operacao-contra-grupo-suspeito-de-trafico-de-drogas-e-lavagem-de-dinheiro-em-pernambuco-e-no-parana-macaco-prego-e-recolhido-durante-acao/"
+  },
+  {
+    "id": "2026-py-asuncion-karajahu-sighting",
+    "title": "Howler Monkey Roaming Asuncion Neighborhoods Prompts Search by Paraguayan Authorities",
+    "dateStart": "2026-11-14",
+    "dateEnd": "2026-11-17",
+    "city": "Asuncion",
+    "state": "",
+    "country": "PY",
+    "lat": -25.2968,
+    "lng": -57.6128,
+    "tier": "reported",
+    "status": "at_large",
+    "category": "sighting",
+    "count": 1,
+    "severity": "minor",
+    "radiusKm": 5,
+    "summary": "A black howler monkey, locally called 'karaja hu', was seen roaming the Barrio Obrero and Tacumbu neighborhoods of Asuncion, Paraguay, on November 14, 2026, prompting a search by municipal firefighters and officials. Authorities said the animal likely strayed from an estimated 10 to 15 individual howler monkey population based in a military-zone reserve in Tacumbu, and urged residents not to feed, touch, or alarm it. Translated and summarized from Spanish-language reporting; single-source and no capture reported as of November 17.",
+    "sourceName": "Ultima Hora",
+    "sourceUrl": "https://www.ultimahora.com/buscan-al-karaja-h-barrios-asuncion-n2980595.html"
   }
 ]
